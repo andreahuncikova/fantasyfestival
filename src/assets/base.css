@@ -1,0 +1,37 @@
+/* color palette*/
+:root {
+  --vt-c-white: #ffffff; /* white */
+  --vt-c-gold: #e7bb0a; /* gold */
+  --vt-c-purple: #893B9D; /* purple */
+  --vt-c-blue: #183451; /* blue */
+  --vt-c-dark: #1b2026; /* dark */
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-blue); /* background color */
+  --color-heading: var(--vt-c-gold); /* heading color */
+  --color-text: var(--vt-c-white); /* text color */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
