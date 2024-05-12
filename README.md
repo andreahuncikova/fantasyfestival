@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # fantasyfestivalproject
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -33,3 +34,7 @@ npm run build
 ```sh
 npm run lint
 ```
+=======
+# fantasyfestival2024
+>>>>>>> bd9d8e23de285a6ad3e721fb6020427da5286738
+# fantasyfestival
