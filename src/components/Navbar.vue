@@ -1,7 +1,7 @@
 <template>
     <header>
       <nav class="navbar">
-        <div class="max-w-screen-xl flex items-center justify-between mx-auto py-4">
+        <div class="flex items-center justify-between mx-auto w-10/12">
           <RouterLink to="/">
             <img src="@/assets/logo.svg" class="h-16 logo" alt="Fantasy festival Logo" />
           </RouterLink>
