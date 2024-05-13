@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="hero">
-      <video autoplay loop muted plays-inline>
+      <!-- <video autoplay loop muted plays-inline>
         <source src="@/assets/videjko.mp4" type="video/mp4">
-      </video>
+      </video> -->
     </div>
   </div>
 </template>
