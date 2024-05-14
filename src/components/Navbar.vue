@@ -1,6 +1,6 @@
 <template>
     <header>
-      <nav class="navbar">
+      <nav class="navbar w-full">
         <div class="flex items-center justify-between mx-auto w-10/12 py-2">
           <RouterLink to="/">
             <img src="@/assets/logo.svg" class="h-16 logo" alt="Fantasy festival Logo" />
@@ -44,6 +44,8 @@
   .navbar {
     background-image: linear-gradient(to bottom, black, var(--vt-c-blue));
     color: white;
+    position: fixed;
+    z-index: 2000;
   }
   
   .nav-link {

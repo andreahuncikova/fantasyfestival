@@ -29,4 +29,33 @@ h4 {
 p {
     font-size: 20px;
 }
+.images {
+    border-radius: 10px;
+    box-shadow: solid10px var(--vt-c-gold); 
+}
 
+.button {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid var(--vt-c-gold);
+    color: var(--vt-c-gold);
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.button:hover {
+    color: #fff; /* White text on hover */
+    background-color: var(--vt-c-gold);
+    border-color: var(--vt-c-gold);
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+}
