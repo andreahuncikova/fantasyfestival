@@ -8,7 +8,7 @@
                 <p>Fantasy Festival is centrally located in relation to public transportation and parking. <br>
                 It's easy to take the train or your own car to Fantasy Festival. The main library, where the festival is held, is a 5-minute walk from the train station.</p>
             </div>
-            <div class="col w-3/12 flex justify-end">
+            <div class="col w-3/12 flex justify-end items-end">
                 <div><img src="@/assets/moon.png" alt=""></div>
             </div>
         </div>

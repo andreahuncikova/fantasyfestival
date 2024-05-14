@@ -81,9 +81,6 @@
     z-index: 100;
   }
 
-h4 {
-  text-shadow: 1px 1px 2px var(--vt-c-gold); 
-}
 .socialmedia {
   transition: 0.3s;
 }
