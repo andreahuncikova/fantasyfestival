@@ -15,7 +15,7 @@
             14th September 2024
         </p>
 
-<button class="mx-auto w-10/12 flex justify-center text-yellow-300 font-semibold py-2 px-4 border border-yellow-300 rounded-lg shadow transition-colors hover:bg-yellow-300 hover:text-yellow-800 mb-20">
+<button class="mx-auto flex justify-center text-yellow-300 font-semibold py-2 px-4 border border-yellow-300 rounded-lg shadow transition-colors hover:bg-yellow-300 hover:text-yellow-800 mb-20">
         READ MORE
     </button>
 
