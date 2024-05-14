@@ -1,5 +1,9 @@
 <template>
   <footer>
+    <div class="container">
+            <img src="@/assets/oblaky.svg" alt="clouds">
+      </div>
+      <div class="container-info">
     <div class="container mx-auto w-10/12 py-6">
       <div class="row md:flex justify-between">
         <div class="col-3 pb-10 md:pb-0">
@@ -62,12 +66,12 @@
       </div>
 
     </div>
-    
+  </div>
   </footer>
 </template>
 
 <style lang="scss" scoped>
-  footer {
+  .container-info {
     background-image: linear-gradient(to bottom, #002B59, #397490);
   }
 
@@ -80,9 +84,14 @@
 h3 {
   text-shadow: 1px 1px 2px var(--vt-c-gold); 
 }
+.socialmedia {
+  transition: 0.3s;
+}
 
 .socialmedia:hover {
-  box-shadow: 1px 1px 2px var(--vt-c-gold); 
+  scale: 1.1;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 
 </style>

@@ -7,12 +7,12 @@
     </div>
   </div>
 
-  <h1>GALLERY</h1>
+  <h1>SPECIAL CHARACTERS</h1>
         
 
         <div class="grid-wrapper mx-auto w-10/12">
           <div><img src="@/assets/Havfruedronning.jpg" alt=""></div>
-            <div><img src="@//assets/Malice.jpg" alt=""></div>
+            <div><img src="@/assets/Malice.jpg" alt=""></div>
             <div><img src="@/assets/Arkivaren_color_soft.jpg" alt=""></div>
             <div><img src="@/assets/Gnist_color_Soft.jpg" alt=""></div>
             <div><img src="@/assets/Gygaz.jpg" alt=""></div>

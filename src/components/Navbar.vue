@@ -52,7 +52,7 @@
   }
 
   .nav-link:hover {
-    text-shadow: 2px 2px 20px var(--vt-c-gold); 
+    text-shadow: 3px 3px 20px var(--vt-c-gold); 
     transition: 0.3s;
 }
   
