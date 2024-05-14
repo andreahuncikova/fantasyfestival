@@ -1,11 +1,11 @@
 <template>
-  <div>
+<main>
     <div class="hero">
       <!-- <video autoplay loop muted plays-inline>
         <source src="@/assets/videjko.mp4" type="video/mp4">
       </video> -->
     </div>
-  </div>
+
 
   <h1>SPECIAL CHARACTERS</h1>
         
@@ -19,7 +19,7 @@
             <div><img src="@/assets/Vogterk├ªmper.jpg" alt=""></div>
         </div>
 
-
+  </main>
 </template>
 
 <script setup>

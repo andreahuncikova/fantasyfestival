@@ -7,7 +7,7 @@
     <div class="container mx-auto w-10/12 py-6">
       <div class="row md:flex justify-between">
         <div class="col-3 pb-10 md:pb-0">
-          <h3 class="font-semibold text-lg py-1 md:py-3">LOCATION</h3>
+          <h4 class="font-semibold text-lg py-1 md:py-3">LOCATION</h4>
           <p>
             Fantasy festival<br>
             Nørregade 19<br>
@@ -15,7 +15,7 @@
           </p>
         </div>
         <div class="col-3 pb-10 md:pb-0"> <!-- Apply text-right class -->
-          <h3 class="font-semibold text-lg py-1 md:py-3">OPENING HOURS</h3>
+          <h4 class="font-semibold text-lg py-1 md:py-3">OPENING HOURS</h4>
           <p class="pb-3">
             Saturday, September 14th:<br>
             from 10 AM to 6 PM
@@ -26,7 +26,7 @@
           </p>
         </div>
         <div class="col-3 pb-10 md:pb-0"> <!-- Apply text-right class -->
-          <h3 class="font-semibold text-lg py-1 md:py-3">CONTACT US</h3>
+          <h4 class="font-semibold text-lg py-1 md:py-3">CONTACT US</h4>
           <p class="pb-3">
             Email:<br>
             <a href="mailto:fantasyfestival@esbjerg.dk">fantasyfestival@esbjerg.dk</a>
@@ -81,7 +81,7 @@
     z-index: 100;
   }
 
-h3 {
+h4 {
   text-shadow: 1px 1px 2px var(--vt-c-gold); 
 }
 .socialmedia {
