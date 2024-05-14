@@ -7,7 +7,7 @@
     </div>
 
 
-  <h1>SPECIAL CHARACTERS</h1>
+  <h1>MEET OUR CHARACTERS</h1>
         
 
         <div class="grid-wrapper mx-auto w-10/12">
@@ -16,7 +16,6 @@
             <div><img src="@/assets/Arkivaren_color_soft.jpg" alt=""></div>
             <div><img src="@/assets/Gnist_color_Soft.jpg" alt=""></div>
             <div><img src="@/assets/Gygaz.jpg" alt=""></div>
-            <div><img src="@/assets/Vogterk├ªmper.jpg" alt=""></div>
         </div>
 
   </main>
@@ -31,13 +30,13 @@
     width: 100%;
     max-height: 100vh;
     position: relative;
-  }
-  .grid-wrapper {
-    flex: 1;
+}
+
+.grid-wrapper {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- }
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); 
+}
 
 .grid-wrapper img {
     width: 100%;
@@ -56,5 +55,6 @@ div {
     justify-content: center;
     align-items: center;
 }
+
 
 </style>
