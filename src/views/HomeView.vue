@@ -6,19 +6,21 @@
       </video> -->
     </div>
 <!---------------------fantasy quest esbjerg info------------------------------->
-<div class="container mx-auto w-10/12">
-<h1>FANTASY QUEST ESBJERG</h1>
 
-        <p class="mx-auto w-10/12 mb-4">Are you ready to live into another world, a magical story where you are the hero who is on a "quest" to overcome the evil forces and save the whole world? So get ready for Fantasy Quest Esbjerg.
-            <br>
-            <br>
-            14th September 2024
-        </p>
-
-<button class="button mb-20">
-        READ MORE
-    </button>
+<div class="container mx-auto w-10/12 pt-6 flex flex-wrap">
+  <div class="w-full mt-20">
+    <h1>FANTASY QUEST ESBJERG</h1>
   </div>
+  <div class="w-full lg:w-10/12 flex flex-col justify-between py-6">
+    <div class="mb-auto">
+      <p class="mt-2">Are you ready to live into another world, a magical story where you are the hero who is on a "quest" to overcome the evil forces and save the whole world? So get ready for Fantasy Quest Esbjerg.</p>
+    </div>
+    <h3 class="mt-6">14 September 2024</h3>
+    <div class="flex pt-3">
+      <a href="https://example.com" class="button">READ MORE</a>
+    </div>
+  </div>
+</div>
 <!---------------------family quest info------------------------------->
 <div class="bg-yellow-300 flex justify-center flex-col items-center py-6 mb-8">  
 
@@ -38,6 +40,7 @@
     </button>
   </div> 
     <!---------------------evening quest info------------------------------->
+    <div class="flex justify-center flex-col items-center py-6 mb-8">  
     <h1 class="mx-auto w-10/12 flex justify-center">EVENING QUEST</h1>
     <h2 class="mx-auto w-10/12 flex justify-center">18:00 - 22:00</h2>
 
@@ -50,10 +53,12 @@
         
     </div>
 
-    <button class="mx-auto pl-4 flex justify-center text-yellow-300 font-semibold py-2 px-4 border border-yellow-300 rounded-lg shadow transition-colors hover:bg-yellow-300 hover:text-yellow-800 mb-20">
+    <button class="button mb-20">
         BUY TICKETS
     </button>
     
+</div>
+
 
 <!---------------------quest read more------------------------------->
 
