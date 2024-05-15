@@ -47,6 +47,26 @@ p {
     transition: 0.3s;
 }
 
+.buttonblue {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid var(--vt-c-blue);
+    color: var(--vt-c-blue);
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.buttonblue:hover {
+    color: #fff; /* White text on hover */
+    background-color: var(--vt-c-blue);
+    border-color: var(--vt-c-blue);
+    transition: 0.3s;
+}
+
 .button:hover {
     color: #fff; /* White text on hover */
     background-color: var(--vt-c-gold);
