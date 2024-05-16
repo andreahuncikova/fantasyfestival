@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="container w-full">
+    <div class="w-full">
             <img src="@/assets/oblakyfinal.png" alt="clouds" class="w-full">
       </div>
       <div class="container-info">

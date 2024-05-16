@@ -42,17 +42,7 @@
 </script>
 
 <style lang="scss" scoped>
-.moon-background {
-    background-image: url('@/assets/moon.png'); 
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 100;
-    right: 0;
-    width: 30%; /* Adjust the width as needed */
-    height: 60%;
-    z-index: 1; /* Ensure moon is behind the map */
-}
+
 
 .map {
     box-shadow: 0 0 20px var(--vt-c-white); /* Adjust the values as needed */
@@ -62,7 +52,7 @@
 
 .map iframe {
     width: 100%;
-    height: 600px;
+    height: 700px;
 }
 
 

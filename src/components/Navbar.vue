@@ -1,7 +1,7 @@
 <template>
     <header>
       <nav class="navbar w-full">
-        <div class="flex items-center justify-between mx-auto w-10/12 py-2">
+        <div class="flex items-center justify-between mx-auto w-10/12 py-4">
           <RouterLink to="/">
             <img src="@/assets/logo.svg" class="h-16 logo" alt="Fantasy festival Logo" />
           </RouterLink>
@@ -10,7 +10,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
           </button>
-          <ul :class="menuOpen ? 'block' : 'hidden'" class="md:flex flex-col md:flex-row md:space-x-4">
+          <ul :class="menuOpen ? 'block' : 'hidden'" class="md:flex flex-col md:flex-row md:space-x-4 pb-3">
             <li>
               <RouterLink to="/" class="nav-link font-bold" :class="{ 'active-link': $route.path === '/' }">QUEST</RouterLink>
             </li>
@@ -42,7 +42,7 @@
   
   <style lang="scss" scoped>
   .navbar {
-    background-image: linear-gradient(to bottom, black, var(--vt-c-blue));
+    background-image: linear-gradient(to bottom, #0f022f 80%, rgba(46, 14, 117, 0.02));
     color: white;
     position: fixed;
     z-index: 2000;

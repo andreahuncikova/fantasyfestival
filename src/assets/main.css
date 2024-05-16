@@ -13,7 +13,7 @@ h1 {
 .h1blue {
     font-size: 60px;
     font-weight: bold;
-    color: #183451;
+    color:var(--vt-c-dark);;
 }
 
 h2 {
@@ -25,7 +25,7 @@ h2 {
 .h2blue {
     font-size: 35px;
     font-weight: bold;
-    color: #183451;
+    color: var(--vt-c-dark);
 }
 
 h3 {
@@ -38,7 +38,7 @@ h3 {
     font-size: 25px;
     font-weight: bold;
     text-shadow: 1px 1px 2px var(--vt-c-gold); 
-    color: #183451;
+    color: var(--vt-c-dark);
 }
 
 h4 {
@@ -51,7 +51,7 @@ p {
 
 .pblue {
     font-size: 20px;
-    color: #183451;
+    color: var(--vt-c-dark);
 }
 
 .images {
@@ -70,6 +70,18 @@ p {
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s;
+}
+
+.moon-background {
+    background-image: url('@/assets/moon.png'); 
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 100;
+    right: 0;
+    width: 30%; /* Adjust the width as needed */
+    height: 60%;
+    z-index: 1; /* Ensure moon is behind the map */
 }
 
 .buttonblue {

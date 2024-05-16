@@ -1,15 +1,15 @@
 /* color palette*/
 :root {
   --vt-c-white: #ffffff; /* white */
-  --vt-c-gold: #ffd52b; /* gold */
+  --vt-c-gold: #ffe678; /* gold */
   --vt-c-purple: #893B9D; /* purple */
-  --vt-c-blue: #180a47; /* blue */
-  --vt-c-dark: #1b2026; /* dark */
+  --vt-c-blue: #252627; /* blue */
+  --vt-c-dark: #2e0e75; /* dark */
 }
 
 /* semantic color variables for this project */
 :root {
-  --color-background: var(--vt-c-blue); /* background color */
+  background-image: linear-gradient(to right, #0d012b, #08064a 20%, var(--vt-c-dark) 50%, #08064a 80%, #0d012b);
   --color-heading: var(--vt-c-gold); /* heading color */
   --color-text: var(--vt-c-white); /* text color */
 }

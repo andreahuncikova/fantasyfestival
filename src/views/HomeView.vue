@@ -7,18 +7,21 @@
     </div>
 <!---------------------fantasy quest esbjerg info------------------------------->
     <div class="container mx-auto w-10/12 pt-6 flex flex-wrap">
-  <div class="w-full mt-20">
+  <div class="w-full mt-20 pt-16">
     <h1>FANTASY QUEST ESBJERG</h1>
   </div>
   <div class="w-full lg:w-6/12 flex flex-col justify-between py-6">
     <div class="mb-auto"> <!-- Aligns content to top -->
       <h3>14 September 2024</h3>
-      <p class="mt-4">Are you ready to live into another world, a magical story where you are the hero who is on a<br>"quest" to overcome the evil forces and save the whole world? So get ready for Fantasy Quest Esbjerg.</p>
+      <p class="mt-4">Are you ready to live into another world, a magical story where you are the hero who is on a "quest" to overcome the evil forces and save the whole world? So get ready for Fantasy Quest Esbjerg.</p>
     </div>
-    <div class="flex pt-3"> <!-- Aligns buttons to bottom -->
+    <div class="flex pt-3 mt-4"> <!-- Aligns buttons to bottom -->
       <a href="https://example.com" class="button">READ MORE</a>
     </div>
   </div>
+  <div class="col w-3/12 flex justify-end items-end moon-background mt-16">
+            </div>
+  
 </div>
 
 <!---------------------quest read more------------------------------->
@@ -38,7 +41,7 @@
 
 <div class="container mx-auto w-10/12 pt-6">
         <div class="w-full lg:flex lg:space-x-8 py-6">
-            <div class="w-full lg:w-6/12 py-6">
+            <div class="w-full lg:w-6/12 py-6 mt-20">
                 <img src="@/assets/festivalpicture.jpg" alt="Festival Picture" class="w-full rounded-lg">
             </div>
             <div class="w-full lg:w-6/12 flex flex-col justify-between">
