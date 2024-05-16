@@ -1,7 +1,7 @@
 <template>
   <footer>
-    <div class="container">
-            <img src="@/assets/oblaky.svg" alt="clouds">
+    <div class="container w-full">
+            <img src="@/assets/oblakyfinal.png" alt="clouds" class="w-full">
       </div>
       <div class="container-info">
     <div class="container mx-auto w-10/12 py-6">
