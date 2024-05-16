@@ -23,42 +23,24 @@
   <h1 class="flex justify-end mt-20 w-10/12 mx-auto">GALLERY</h1>
   
   <div class="container-gallery">
-    <div class="row h-100"></div>
-    <div class="row">
-  <div class="gallery-items mx-auto w-10/12 mt-20 grid grid-cols-6 grid-rows-4 gap-15 h-400 w-300p relative left-minus-150">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-    <img src="@/assets/moon.png" alt="Moon" class="w-full h-full object-cover">
-  </div>
-  </div>
+        <div class="gallery-items flex justify-center items-center">
+            <img src="@/assets/moon.png" alt="Moon" class="img-gallery w-full h-full object-cover rounded-lg">
+            <img src="@/assets/moon.png" alt="Moon" class="img-gallery">
+            <img src="@/assets/moon.png" alt="Moon" class="img-gallery">
+            <img src="@/assets/moon.png" alt="Moon" class="img-gallery">
+            <img src="@/assets/moon.png" alt="Moon" class="img-gallery">
+            <img src="@/assets/moon.png" alt="Moon" class="img-gallery">
+            <!-- Add more images here as needed -->
+        </div>
 </div>
+
 
 </main>
 
 
 
 </template>
+
 
 <style>
 .container-gallery {
@@ -70,7 +52,12 @@
   background-repeat: no-repeat; /* Prevent the background from repeating */
 }
 
-
+.img-gallery {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
 
 
 </style>
