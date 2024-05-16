@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="container">
+    <div class="container mt-32">
             <img src="@/assets/oblaky.svg" alt="clouds">
       </div>
       <div class="container-info">
