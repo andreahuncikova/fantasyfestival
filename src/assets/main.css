@@ -55,7 +55,8 @@ p {
 }
 
 .images {
-    box-shadow: 0 0 20px var(--vt-c-white); /* Adjust the values as needed */
+    box-shadow: 0 0 20px var(--vt-c-purple); /* Adjust the values as needed */
+    border: 3px solid var(--vt-c-purple);
     border-radius: 10px; /* Optional: Add border radius for rounded corners */
     overflow: hidden; /* Optional: Ensure that the shadow doesn't overflow */
 }

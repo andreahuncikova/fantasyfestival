@@ -90,24 +90,24 @@
     </div>
   </div>    
 <!---------------------family quest info------------------------------->
-<div class="bg-purple-400 flex justify-center flex-col items-center py-6 mt-32">  
+<div class="familyquest flex justify-center flex-col items-center py-6 mt-32">  
 
 <div class="container mx-auto w-10/12 pt-6">
         <div class="w-full lg:flex lg:space-x-8 py-6">
-            <div class="w-full lg:w-6/12 py-6 mt-20">
-                <img src="@/assets/festivalpicture.jpg" alt="Festival Picture" class="w-full rounded-lg">
-            </div>
             <div class="w-full lg:w-6/12 flex flex-col justify-between">
               <div class="w-full">
             <h1 class="h1blue font-bold">FAMILY QUEST</h1>
         </div>
               <div class="mb-auto">
-                <h3 class="h3blue">10:00 - 14:00</h3>
+                <h3 class="h3blue pt-10">10:00 - 14:00</h3>
                     <p class="pblue mt-2">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt. Here you meet magical creatures who set you some tasks and challenges along the way towards the goal, which you must solve together to complete the Quest. The degree of difficulty has been lowered so that the children can help solve the tasks. But make no mistake, all good strength and cooperation skills are needed if you are to help save Esbjerg. As an added bonus, you can meet the YouTuber Salmon Rider during the Quest around the streets of Esbjerg.</p>
                 </div>
                 <div class="flex pt-3"> <!-- Aligns buttons to bottom -->
                   <a href="https://example.com" class="buttonblue">BUY TICKETS</a>
                 </div>
+            </div>
+            <div class="w-full lg:w-6/12 py-6 mt-20">
+                <img src="@/assets/festivalpicture.jpg" alt="Festival Picture" class="w-full rounded-lg">
             </div>
         </div>
     </div>
@@ -144,6 +144,12 @@
     width: 100%;
     max-height: 100vh;
     position: relative;
+}
+
+.familyquest {
+  min-height: 700px;
+  max-width: 100%;
+  background-image: url('@/assets/purplebackground.svg'); 
 }
 
 .grid-wrapper {

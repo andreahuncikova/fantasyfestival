@@ -31,7 +31,7 @@
 
     <div class="container-map mx-auto w-full h-full flex items-center justify-center flex-col">
         <div class="map w-10/12 h-full rounded-xl">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.6098191349392!2d8.451657876388301!3d55.46946841377929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b212b9a5bffcf%3A0xb4a5a9033bed3394!2sN%C3%B8rregade%2019%2C%206700%20Esbjerg!5e0!3m2!1ssk!2sdk!4v1715840838739!5m2!1ssk!2sdk" width="80%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.6098191349392!2d8.451657876388301!3d55.46946841377929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b212b9a5bffcf%3A0xb4a5a9033bed3394!2sN%C3%B8rregade%2019%2C%206700%20Esbjerg!5e0!3m2!1ssk!2sdk!4v1715840838739!5m2!1ssk!2sdk&theme=dark" width="80%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     </main>
