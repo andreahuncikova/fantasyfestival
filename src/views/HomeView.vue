@@ -148,7 +148,7 @@
 
 .grid-wrapper {
       display: grid;
-      grid-gap: 10px;
+      grid-gap: 15px;
       grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
     }
 

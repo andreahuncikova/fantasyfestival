@@ -1,7 +1,7 @@
 /* color palette*/
 :root {
   --vt-c-white: #ffffff; /* white */
-  --vt-c-gold: #c391f4; /* gold */
+  --vt-c-gold: #c076d2; /* gold */
   --vt-c-purple: #c076d2; /* purple */
   --vt-c-blue: #252627; /* blue */
   --vt-c-dark: #2e0e75; /* dark */
@@ -10,7 +10,7 @@
 /* semantic color variables for this project */
 :root {
   background-image: linear-gradient(to right, #0d012b, #08064a 20%, var(--vt-c-dark) 50%, #08064a 80%, #0d012b);
-  --color-heading: var(--vt-c-gold); /* heading color */
+  --color-heading: var(--vt-c-purple); /* heading color */
   --color-text: var(--vt-c-white); /* text color */
 }
 

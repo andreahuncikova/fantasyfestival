@@ -45,9 +45,9 @@
 
 
 .map {
-    box-shadow: 0 0 20px var(--vt-c-white); /* Adjust the values as needed */
-    border-radius: 10px; /* Optional: Add border radius for rounded corners */
-    overflow: hidden; /* Optional: Ensure that the shadow doesn't overflow */
+    box-shadow: 0 0 20px var(--vt-c-white); 
+    border-radius: 10px; 
+    overflow: hidden; 
 }
 
 .map iframe {

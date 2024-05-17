@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     color: var(--vt-c-gold);
 }
@@ -55,8 +55,9 @@ p {
 }
 
 .images {
-    border-radius: 10px;
-    box-shadow: solid 10px var(--vt-c-gold); 
+    box-shadow: 0 0 20px var(--vt-c-white); /* Adjust the values as needed */
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    overflow: hidden; /* Optional: Ensure that the shadow doesn't overflow */
 }
 
 .button {
