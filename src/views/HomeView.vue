@@ -102,7 +102,7 @@
                 <h3 class="h3blue pt-10">10:00 - 14:00</h3>
                     <p class="pblue mt-2">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt. Here you meet magical creatures who set you some tasks and challenges along the way towards the goal, which you must solve together to complete the Quest. The degree of difficulty has been lowered so that the children can help solve the tasks. But make no mistake, all good strength and cooperation skills are needed if you are to help save Esbjerg. As an added bonus, you can meet the YouTuber Salmon Rider during the Quest around the streets of Esbjerg.</p>
                 </div>
-                <div class="flex pt-3"> <!-- Aligns buttons to bottom -->
+                <div class="flex pt-3">
                   <a href="https://example.com" class="buttonblue">BUY TICKETS</a>
                 </div>
             </div>
@@ -114,21 +114,23 @@
   </div>
     <!---------------------evening quest info------------------------------->
 <div class="container mx-auto w-10/12 pt-6 flex flex-wrap mt-32">
-  <div class="w-full">
-    <h1>EVENING QUEST</h1>
+  <div class="w-full lg:w-6/12 py-6 justify-end">
+    <img src="@/assets/festivalpicture.jpg" class="images">
   </div>
   <div class="w-full lg:w-6/12 flex flex-col justify-between py-6">
-    <div class="mb-auto"> <!-- Aligns content to top -->
+    
+    <div class="mb-auto ml-8"> <!-- Aligns content to top -->
+      <div class="w-full">
+    <h1>EVENING QUEST</h1>
+  </div>
       <h3>18:00 - 22:00</h3>
       <p class="mt-4">When twilight begins to descend over Esbjerg, the level of difficulty in the Evening Quest is turned up. Now you really have to think creatively and solve tasks that require both courage, cooperation and ingenuity in order for you to complete the quest and save Esbjerg. If you love solving puzzles and cracking codes, don't miss out on this ultimate experience. We send you and your friends on your ultimate adventure in Esbjerg's streets and alleys. Here you will have to collaborate and devise new solutions to complete the AftenQuest.</p>
     </div>
-    <div class="flex pt-3"> <!-- Aligns buttons to bottom -->
+    <div class="flex pt-3 ml-8"> <!-- Aligns buttons to bottom -->
       <a href="https://example.com" class="button">BUY TICKETS</a>
     </div>
   </div>
-  <div class="w-full lg:w-6/12 py-6 md:pl-6 justify-end">
-    <img src="@/assets/festivalpicture.jpg" alt="" class="images">
-  </div>
+  
 </div>
 
 
@@ -152,6 +154,7 @@
   background-image: url('@/assets/purplebackground.svg'); 
 }
 
+
 .grid-wrapper {
       display: grid;
       grid-gap: 15px;
@@ -166,7 +169,7 @@
       width: 100%;
       height: 400px;
       transform-style: preserve-3d;
-      transition: transform 0.6s;
+      transition: transform 1.3s;
       position: relative;
     }
 
