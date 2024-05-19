@@ -115,6 +115,19 @@ p {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 40px; /* Adjust font size for smaller screens */
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .button {
+        font-size: medium;
+        padding: 5px 10px;
     }
 }

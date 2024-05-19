@@ -1,10 +1,10 @@
 <template>
   <main>
     <div class="container mx-auto w-10/12 pt-6 flex flex-wrap">
-      <div class="w-full mt-32">
+      <div class="w-full mt-20 md:mt-32">
         <h1>FANTASY FESTIVAL</h1>
       </div>
-      <div class="w-full lg:w-6/12 flex flex-col justify-between py-6 mt-16">
+      <div class="w-full lg:w-6/12 flex flex-col justify-between py-6 mt-0 md:mt-16">
         <div class="mb-auto">
           <h2>Explore more about the festival</h2>
           <p class="mt-2">Fantasy Festival Esbjerg is an enchanting event that celebrates the wonders of fantasy literature and the power of imagination. Since its inception in 2015, the festival has grown exponentially, attracting approximately 8,000 attendees in 2022. From immersive storytelling sessions to interactive workshops, attendees can explore the rich tapestry of the fantasy genre. Join us for a weekend filled with magic, adventure, and endless possibilities at Fantasy Festival Esbjerg!</p>
@@ -15,55 +15,55 @@
           <a href="/program" class="button ml-6">SEE PROGRAM</a>
         </div>
       </div>
-      <div class="w-full lg:w-6/12 py-6 md:pl-6 justify-end mt-16">
+      <div class="w-full lg:w-6/12 py-6 md:pl-6 justify-end mt-0 md:mt-16">
         <img src="@/assets/festivalpicture.jpg" alt="" class="images festivalpicture">
       </div>
     </div>
 
-    <h1 class="flex justify-end mt-40 w-10/12 mx-auto">GALLERY</h1>
+    <h1 class="flex justify-end mt-20 md:mt-40 w-10/12 mx-auto">GALLERY</h1>
 
     <div class="container-gallery flex items-center justify-center min-h-screen">
-      <div class="grid grid-cols-12 grid-rows-4 gap-4 w-full max-w-7xl mx-auto w-10/12">
-        <div class="col-span-2 row-span-1 rounded-lg overflow-hidden">
+      <div class="grid grid-cols-12 grid-rows-4 gap-4 w-full max-w-7xl mx-auto w-10/12 m-10 md:max-h-750 p-3 md:p-0">
+        <div class="col-span-6 md:col-span-2 row-span-1 rounded-lg overflow-hidden">
           <img src="@/assets/festival1.jpg" alt="Moon Image 1" class="w-full h-full object-cover gallery-image">
         </div>
-        <div class="col-span-2 row-span-1 rounded-lg overflow-hidden">
+        <div class="col-span-6 md:col-span-2 row-span-1 rounded-lg overflow-hidden">
           <img src="@/assets/festival15.jpg" alt="Moon Image 1" class="w-full h-full object-cover gallery-image">
         </div>
-        <div class="col-span-2 row-span-2 rounded-lg overflow-hidden">
+        <div class="col-span-6 md:col-span-2 row-span-2 rounded-lg overflow-hidden">
           <img src="@/assets/festival5.jpg" alt="Moon Image 2" class="w-full h-full object-cover gallery-image">
         </div>
-        <div class="col-span-2 row-span-1 rounded-lg overflow-hidden">
+        <div class="col-span-6 md:col-span-2 row-span-1 rounded-lg overflow-hidden">
           <img src="@/assets/festival4.jpg" alt="Moon Image 1" class="w-full h-full object-cover gallery-image">
         </div>
-        <div class="col-span-4 row-span-2 rounded-lg overflow-hidden">
+        <div class="col-span-6 md:col-span-4 row-span-2 rounded-lg overflow-hidden">
           <img src="@/assets/festival16.jpg" alt="Moon Image 3" class="w-full h-full object-cover gallery-image">
         </div>
-        <div class="col-span-2 row-span-1 rounded-lg overflow-hidden">
+        <div class="col-span-6 md:col-span-2 row-span-1 rounded-lg overflow-hidden">
           <img src="@/assets/festival7.jpg" alt="Moon Image 4" class="w-full h-full object-cover gallery-image">
         </div>
-        <div class="col-span-2 row-span-1 rounded-lg overflow-hidden">
+        <div class="col-span-6 md:col-span-2 row-span-1 rounded-lg overflow-hidden">
           <img src="@/assets/festival12.jpg" alt="Moon Image 5" class="w-full h-full object-cover gallery-image">
         </div>
-        <div class="col-span-2 row-span-1 rounded-lg overflow-hidden">
+        <div class="col-span-6 md:col-span-2 row-span-1 rounded-lg overflow-hidden">
           <img src="@/assets/festival2.jpg" alt="Moon Image 6" class="w-full h-full object-cover gallery-image">
         </div>
-        <div class="col-span-4 row-span-2 rounded-lg overflow-hidden">
+        <div class="col-span-6 md:col-span-4 row-span-2 rounded-lg overflow-hidden">
           <img src="@/assets/festival3.jpg" alt="Moon Image 7" class="w-full h-full object-cover gallery-image">
         </div>
-        <div class="col-span-4 row-span-1 rounded-lg overflow-hidden">
+        <div class="col-span-6 md:col-span-4 row-span-1 rounded-lg overflow-hidden">
           <img src="@/assets/festival14.jpg" alt="Moon Image 8" class="w-full h-full object-cover gallery-image">
         </div>
-        <div class="col-span-2 row-span-2 rounded-lg overflow-hidden">
+        <div class="col-span-6 md:col-span-2 row-span-2 rounded-lg overflow-hidden">
           <img src="@/assets/festival13.jpg" alt="Moon Image 9" class="w-full h-full object-cover gallery-image">
         </div>
-        <div class="col-span-2 row-span-1 rounded-lg overflow-hidden">
-          <img src="@/assets/festival10.jpg" alt="Moon Image 6" class="w-full h-full object-cover gallery-image">
+        <div class="col-span-6 md:col-span-2 row-span-1 rounded-lg overflow-hidden">
+          <img src="@/assets/festival17.jpg" alt="Moon Image 6" class="w-full h-full object-cover gallery-image">
         </div>
-        <div class="col-span-4 row-span-1 rounded-lg overflow-hidden">
+        <div class="col-span-6 md:col-span-4 row-span-1 rounded-lg overflow-hidden">
           <img src="@/assets/festival11.jpg" alt="Moon Image 8" class="w-full h-full object-cover gallery-image">
         </div>
-        <div class="col-span-2 row-span-1 rounded-lg overflow-hidden">
+        <div class="col-span-6 md:col-span-2 row-span-1 rounded-lg overflow-hidden">
           <img src="@/assets/festival6.jpg" alt="Moon Image 9" class="w-full h-full object-cover gallery-image">
         </div>
       </div>
@@ -110,15 +110,13 @@ export default {
   max-width: 100%;
   background-image: url('@/assets/purplebackground.svg'); 
 }
-.grid {
-  max-height: 750px;
-}
 
 .gallery-image {
   cursor: pointer; /* Add pointer cursor for images */
 }
 
 .modal {
+  margin-top: 30px;
   display: none;
   position: fixed;
   z-index: 1000;
@@ -128,8 +126,8 @@ export default {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-content {

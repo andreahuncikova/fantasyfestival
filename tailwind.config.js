@@ -9,6 +9,11 @@ export default {
       fontFamily: {
         'prompt': ['Prompt', 'sans-serif'],
       },
+      maxHeight: {
+        '750': '750px',
+        '1000': '1500px',
+        '300': '300px',
+      },
     },
   },
   plugins: [],
