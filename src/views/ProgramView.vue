@@ -1,11 +1,13 @@
 <template>
-    <div class="hero">
-      <!-- <video autoplay loop muted plays-inline>
-        <source src="@/assets/videjko.mp4" type="video/mp4">
-      </video> -->
+    <main>
+
+    <div class="flex items-center justify-center h-screen w-screen">
+        <div class="w-8/12 h-full">
+            <div class="h-full p-10">
+                <iframe class="inset-0 w-full h-5/6 images" src="https://www.youtube.com/embed/a1Qf8HLr4LE?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
-
-
   <!-------------------- program --------------------->  
   <div class="container mx-auto w-10/12 pt-6 flex flex-wrap">
     <div class="w-full mt-20 pt-16 flex justify-end">
@@ -47,7 +49,7 @@
     </div>
 
 </div>  
-    
+</main>
 
 </template>
 
@@ -62,9 +64,5 @@
     position: relative;
 }
 
-.program-bg {
-  min-height: 1100px;
-  max-width: 100%;
-  background-image: url('@/assets/purplebackground.svg'); 
-}
+
 </style>
