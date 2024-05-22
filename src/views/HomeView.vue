@@ -9,32 +9,51 @@
       </video> -->
     </div>
 <!---------------------fantasy quest esbjerg info------------------------------->
-    <div class="container mx-auto w-10/12 flex flex-wrap">
-  <div class="w-full pt-16">
-    <h1>FANTASY QUEST ESBJERG</h1>
-  </div>
-  <div class="w-full lg:w-6/12 flex flex-col justify-between py-6">
-    <div class="mb-auto"> <!-- Aligns content to top -->
-      <h3>14 September 2024</h3>
-      <p class="mt-4">Are you ready to live into another world, a magical story where you are the hero who is on a "quest" to overcome the evil forces and save the whole world? So get ready for Fantasy Quest Esbjerg.</p>
+<div class="container mx-auto w-10/12 flex flex-wrap">
+    <div class="w-full pt-16">
+      <h1>FANTASY QUEST ESBJERG</h1>
     </div>
-    <div class="flex pt-3 mt-4"> <!-- Aligns buttons to bottom -->
-      <button id="readMoreBtn" class="button">READ MORE</button>
-
+    <div class="w-full lg:w-6/12 flex flex-col justify-between py-6">
+      <div class="mb-auto">
+        <h3>14 September 2024</h3>
+        <p class="mt-4">
+          Are you ready to live into another world, a magical story where you are the hero who is on a "quest" to overcome the evil forces and save the whole world? So get ready for Fantasy Quest Esbjerg. This event will take you on an unforgettable adventure filled with magic, mystery, and excitement. Join fellow adventurers as you embark on a quest that will challenge your skills and ignite your imagination. Don’t miss out on this epic experience!
+          <span v-if="showMoreText">
+             <br>
+             <br>
+             Imagine "Prisoners at the Fort" with a lot of magic, some theater and role playing, some heroes and villains and of course the battle between good and evil, then you are well on your way to Fantasy Quest Esbjerg.
+            
+            In 2024, Fantasy Quest Esbjerg will have both a difficult evening edition and a family-friendly edition during the day during the Fantasy Festival, written in collaboration with the YouTuber Lakserytteren, where everyone can participate.
+            
+            If you fancy a slightly bigger challenge, the level of difficulty is turned up when twilight settles over Esbjerg's streets.  
+            <br>
+            <br>
+            In the old days they said...
+            <br>
+            ... that evil would come from the sea. Through generations that tale was passed on. You heard it when Esbjerg was founded in 1868. You always kept an eye on the sea. To the west. 
+            So in Esbjerg they built a defense against evil. Something that would keep an eye on the sea, something that would step in if things went wrong. In 1995, that protection was reinforced when the sculptures "Man by the sea" were created. While the artist built during the day, the sorcerer Gygaz the Wise worked at night. 
+            Gygaz opened a portal to the world of fighters. Here he found four good fighters who volunteered. They said goodbye to their families and trotted through the portal towards Esbjerg. Here they met with Gygaz. The air trembled with magic, and as the last words of a powerful form left Gygaz's lips, the four giants had become one with the statues of the four white men. That way, they could forever keep an eye on the sea...
+            <br>
+            <br>
+            The years passed and there was peace and quiet...
+            <br>
+            ...But then mysterious things began to happen. Nature became ill. The ancients spoke of evil. About the guardians. One day the clouds drew together, over the sea to the west, and it became unnaturally dark. Lightning tore the sky. A large, winged creature could be seen in the sky. 
+            The four statues stood up, the guardians had been awakened, they got ready and shouted. The cries could be heard across the land, across portals to other worlds. "There is a need for heroes in Esbjerg!", they shouted. 
+            It's time for the heroes to gather. It is time for evil to be fought. It is time for the portals to close.
+            It's time for Fantasy Quest Esbjerg. Are you ready?
+            
+          </span>
+        </p>
+      </div>
+      <div class="flex pt-3 mt-4">
+        <button @click="toggleMoreText" class="button">
+          {{ showMoreText ? 'READ LESS' : 'READ MORE' }}
+        </button>
+      </div>
+    </div>
+    <div class="col w-3/12 flex justify-end items-end moon-background mt-16">
     </div>
   </div>
-  <div class="col w-3/12 flex justify-end items-end moon-background mt-16">
-            </div>
-
-            <div id="moreInfo" class="container mx-auto w-10/12 pt-6 flex flex-wrap mt-16 hidden">
-    <div class="w-full">
-      <h2>More Information</h2>
-      <p class="mt-4">Detailed information about the Fantasy Quest Esbjerg...</p>
-    </div>
-  </div>
-
-</div>
-
 <!---------------------quest read more------------------------------->
         <h1 class="mx-auto w-10/12 flex justify-end mt-40">MEET OUR CHARACTERS</h1>
   <div class="grid-wrapper mx-auto w-10/12 mt-20">
@@ -142,8 +161,19 @@
   </main>
 </template>
 
-<script setup>
-
+<script>
+export default {
+  data() {
+    return {
+      showMoreText: false
+    }
+  },
+  methods: {
+    toggleMoreText() {
+      this.showMoreText = !this.showMoreText;
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
