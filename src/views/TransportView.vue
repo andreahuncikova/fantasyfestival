@@ -1,6 +1,6 @@
 <template>
     <main>
-    <div class="container pt-16">
+    <div class="container pt-16 flex content-center">
         <div class="row flex flex-row">
             <div class="col w-1/12"></div>
             <div class="col w-8/12">
@@ -9,25 +9,36 @@
             <h3 class="mt-6">Public Transportation:</h3>
             <p>If you prefer public transportation, getting to Fantasy Festival is a breeze. The festival venue is centrally located, making it easily accessible by train. The main library, where the festival takes place, is just a short 5-minute walk from the nearest train station. Whether you're arriving from near or far, the well-connected train network ensures a smooth journey to the heart of the festival.</p>
         </div>
-            <div class="col w-3/12 flex justify-end items-end moon-background mt-4">
+            <div class="col w-3/12 flex justify-end items-end moon-background">
             </div>
         </div>
     </div>
 
-    <div class="container mx-auto w-10/12 my-32">
-        <div class="row">
-            <h3 class="pt-4">Overview of free parking in Esbjerg:</h3>
+    <div class="mt-60 flex justify-end mx-auto w-10/12">
+        <h1>PARKING</h1>
+    </div>
+    <div class="container-parking mx-auto w-full">
+        <div class="container mx-auto w-10/12 flex justify-center">
+        <div class="row flex flex-row items-center">
+            <div class="w-full lg:w-6/12 justify-end p-6">
+                <img src="@/assets/transportpicture.jpg" alt="" class="imagesblue festivalpicture">
+            </div>
+            <div class="col w-1/12"></div>
+            <div class="col">
+            <h3 class="h3blue pt-4">Overview of free parking in Esbjerg:</h3>
             <p class="pt-2">It is possible to park for free at Museumspladsen, right next to the main library. 
             The parking lot fills up quickly, so alternatively, you may have to park elsewhere.</p>
             <p class="pt-2">It's free to park for the first two hours in downtown Esbjerg. Some places have time-limited parking.</p>
-            <h3 class="pt-16">Paid parking in downtown Esbjerg:</h3>
+            <h3 class="h3blue pt-16">Paid parking in downtown Esbjerg:</h3>
             <p class="pt-2">There is also a decent parking garage near Streetmekka Esbjerg/Sydvestjysk Hospital. It's rarely full on weekends and could therefore be a parking option.</p>
-            <h3 class="pt-16">Taxi Esbjerg:</h3>
+            <h3 class="h3blue pt-16">Taxi Esbjerg:</h3>
             <p class="pt-1">Taxi 7514 4500</p>
         </div>
+        </div>
     </div>
+</div>
 
-    <h1 class="flex mx-auto w-10/12 justify-end pb-16">FIND US HERE</h1>
+    <h1 class="flex mx-auto w-10/12 py-16 mt-10">FIND US HERE</h1>
 
     <div class="container-map mx-auto w-full h-full flex items-center justify-center flex-col">
         <div class="map images w-10/12 h-full rounded-xl">
@@ -47,6 +58,11 @@
     height: 700px;
 }
 
-
-
+.container-parking {
+    min-height: 800px;
+    max-width: 100%;
+    background-image: url('@/assets/backgroundsmaller.svg'); 
+    display: flex;
+    align-content: center;
+}
 </style>
