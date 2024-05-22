@@ -9,8 +9,8 @@
       </video> -->
     </div>
 <!---------------------fantasy quest esbjerg info------------------------------->
-    <div class="container mx-auto w-10/12 pt-6 flex flex-wrap">
-  <div class="w-full mt-20 pt-16">
+    <div class="container mx-auto w-10/12 flex flex-wrap">
+  <div class="w-full pt-16">
     <h1>FANTASY QUEST ESBJERG</h1>
   </div>
   <div class="w-full lg:w-6/12 flex flex-col justify-between py-6">
@@ -36,8 +36,8 @@
 </div>
 
 <!---------------------quest read more------------------------------->
-        <h1 class="mx-auto w-10/12 flex justify-end mt-32">MEET OUR CHARACTERS</h1>
-  <div class="grid-wrapper mx-auto w-10/12 mt-10">
+        <h1 class="mx-auto w-10/12 flex justify-end mt-40">MEET OUR CHARACTERS</h1>
+  <div class="grid-wrapper mx-auto w-10/12 mt-20">
     <div class="card">
       <div class="card-inner">
         <div class="card-front">
@@ -90,44 +90,49 @@
     </div>
   </div>    
 <!---------------------family quest info------------------------------->
-<div class="familyquest flex justify-center flex-col items-center py-6 mt-32">  
+<div class="familyquest flex justify-center flex-col items-center mt-52">  
 
-<div class="container mx-auto w-10/12 pt-6">
-        <div class="w-full lg:flex lg:space-x-8 py-6">
-            <div class="w-full lg:w-6/12 flex flex-col justify-between">
-              <div class="w-full">
+<div class="container mx-auto w-10/12">
+        <div class="w-full lg:flex">
+            <div class="w-full lg:w-7/12 flex flex-col justify-between">
+              <div class="mb-auto">
+                <div class="w-full">
             <h1 class="h1blue font-bold">FAMILY QUEST</h1>
         </div>
-              <div class="mb-auto">
                 <h3 class="h3blue pt-10">10:00 - 14:00</h3>
                     <p class="pblue mt-2">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt. Here you meet magical creatures who set you some tasks and challenges along the way towards the goal, which you must solve together to complete the Quest. The degree of difficulty has been lowered so that the children can help solve the tasks. But make no mistake, all good strength and cooperation skills are needed if you are to help save Esbjerg. As an added bonus, you can meet the YouTuber Salmon Rider during the Quest around the streets of Esbjerg.</p>
                 </div>
                 <div class="flex pt-3">
-                  <a href="https://example.com" class="buttonblue">BUY TICKETS</a>
+                  <a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3" class="buttonblue">BUY TICKETS</a>
                 </div>
             </div>
-            <div class="w-full lg:w-6/12 py-6 mt-20">
-                <img src="@/assets/festivalpicture.jpg" alt="Festival Picture" class="w-full rounded-lg">
+            <div class="w-1/12"></div>
+            <div class="w-full lg:w-4/12">
+                <img src="@/assets/familyquest.jpg" alt="Festival Picture" class="imagesblue w-full rounded-lg">
             </div>
         </div>
     </div>
   </div>
     <!---------------------evening quest info------------------------------->
-<div class="container mx-auto w-10/12 pt-6 flex flex-wrap mt-32">
-  <div class="w-full lg:w-6/12 py-6 justify-end">
-    <img src="@/assets/festivalpicture.jpg" class="images">
+<div class="container mx-auto w-10/12 flex flex-wrap mt-20">
+  
+  <div class="w-full lg:w-4/12 py-6 justify-end">
+    <img src="@/assets/eveningquest.jpg" class="images">
   </div>
-  <div class="w-full lg:w-6/12 flex flex-col justify-between py-6">
+
+  <div class="w-1/12 hidden sm:block"></div>
+
+  <div class="w-full lg:w-7/12 flex flex-col justify-between py-6">
     
-    <div class="mb-auto ml-8"> <!-- Aligns content to top -->
+    <div class="mb-auto"> 
       <div class="w-full">
     <h1>EVENING QUEST</h1>
   </div>
-      <h3>18:00 - 22:00</h3>
-      <p class="mt-4">When twilight begins to descend over Esbjerg, the level of difficulty in the Evening Quest is turned up. Now you really have to think creatively and solve tasks that require both courage, cooperation and ingenuity in order for you to complete the quest and save Esbjerg. If you love solving puzzles and cracking codes, don't miss out on this ultimate experience. We send you and your friends on your ultimate adventure in Esbjerg's streets and alleys. Here you will have to collaborate and devise new solutions to complete the AftenQuest.</p>
+      <h3 class="mt-6">18:00 - 22:00</h3>
+      <p class="mt-2">When twilight begins to descend over Esbjerg, the level of difficulty in the Evening Quest is turned up. Now you really have to think creatively and solve tasks that require both courage, cooperation and ingenuity in order for you to complete the quest and save Esbjerg. <br> If you love solving puzzles and cracking codes, don't miss out on this ultimate experience. We send you and your friends on your ultimate adventure in Esbjerg's streets and alleys. Here you will have to collaborate and devise new solutions to complete the AftenQuest.</p>
     </div>
-    <div class="flex pt-3 ml-8"> <!-- Aligns buttons to bottom -->
-      <a href="https://example.com" class="button">BUY TICKETS</a>
+    <div class="flex pt-3"> 
+      <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" class="button">BUY TICKETS</a>
     </div>
   </div>
   
@@ -149,9 +154,9 @@
 }
 
 .familyquest {
-  min-height: 700px;
+  min-height: 800px;
   max-width: 100%;
-  background-image: url('@/assets/purplebackground.svg'); 
+  background-image: url('@/assets/backgroundsmaller.svg'); 
 }
 
 
@@ -169,7 +174,7 @@
       width: 100%;
       height: 400px;
       transform-style: preserve-3d;
-      transition: transform 1.3s;
+      transition: transform 1.1s;
       position: relative;
     }
 

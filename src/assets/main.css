@@ -37,12 +37,12 @@ h3 {
 .h3blue {
     font-size: 25px;
     font-weight: bold;
-    text-shadow: 1px 1px 2px var(--vt-c-gold); 
-    color: var(--vt-c-dark);
+    text-shadow: 1px 1px 2px var(--vt-c-dark); 
+    color: var(--vt-c-white);
 }
 
 h4 {
-    text-shadow: 1px 1px 2px var(--vt-c-gold); 
+    text-shadow: 1px 2px 5px var(--vt-c-gold); 
 }
 
 p {
@@ -51,7 +51,7 @@ p {
 
 .pblue {
     font-size: 20px;
-    color: var(--vt-c-dark);
+    color: var(--vt-c-white);
 }
 
 .images {
@@ -61,16 +61,23 @@ p {
     overflow: hidden; /* Optional: Ensure that the shadow doesn't overflow */
 }
 
+.imagesblue {
+    box-shadow: 0 0 20px var(--vt-c-dark); /* Adjust the values as needed */
+    border: 3px solid var(--vt-c-dark);
+    border-radius: 10px; /* Optional: Add border radius for rounded corners */
+    overflow: hidden; /* Optional: Ensure that the shadow doesn't overflow */
+}
+
 .button {
     display: inline-block;
     font-size: 20px;
     padding: 10px 20px;
-    border: 2px solid var(--vt-c-gold);
+    border: 3px solid var(--vt-c-gold);
     color: var(--vt-c-gold);
     border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     transition: 0.3s;
 }
 
@@ -90,12 +97,12 @@ p {
     display: inline-block;
     font-size: 20px;
     padding: 10px 20px;
-    border: 2px solid var(--vt-c-dark);
+    border: 3px solid var(--vt-c-dark);
     color: var(--vt-c-dark);
     border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     transition: 0.3s;
 }
 
@@ -107,7 +114,7 @@ p {
 }
 
 .button:hover {
-    color: #fff; /* White text on hover */
+    color: #fff;
     background-color: var(--vt-c-gold);
     border-color: var(--vt-c-gold);
     transition: 0.3s;
@@ -115,7 +122,13 @@ p {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 30px; /* Adjust font size for smaller screens */
+        font-size: 30px; 
+    }
+    .h1blue {
+        font-size: 30px; 
+    }
+    .h3blue {
+        font-size: 18px;
     }
     h2 {
         font-size: 20px;
@@ -126,8 +139,16 @@ p {
     p {
         font-size: 15px;
     }
+    .pblue {
+        font-size: 15px;
+    }
     .button {
         font-size: medium;
         padding: 5px 10px;
     }
+    .buttonblue {
+        font-size: medium;
+        padding: 5px 10px;
+    }
 }
+

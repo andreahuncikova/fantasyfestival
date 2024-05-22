@@ -44,7 +44,7 @@
   .navbar {
     background-image: linear-gradient(to bottom, #0f022f 80%, rgba(46, 14, 117, 0.02));
     color: white;
-    position: fixed;
+    position: sticky;
     z-index: 2000;
   }
   
