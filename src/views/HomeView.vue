@@ -13,7 +13,7 @@
     <div class="w-full pt-16">
       <h1>FANTASY QUEST ESBJERG</h1>
     </div>
-    <div class="w-full lg:w-6/12 flex flex-col justify-between py-6">
+    <div class="w-full lg:w-8/12 flex flex-col justify-between py-6">
       <div class="mb-auto">
         <h3>14 September 2024</h3>
         <p class="mt-4">
@@ -28,6 +28,7 @@
             If you fancy a slightly bigger challenge, the level of difficulty is turned up when twilight settles over Esbjerg's streets.  
             <br>
             <br>
+            <div class="familyquest flex justify-center flex-col items-center mt-52"></div>
             In the old days they said...
             <br>
             ... that evil would come from the sea. Through generations that tale was passed on. You heard it when Esbjerg was founded in 1868. You always kept an eye on the sea. To the west. 
