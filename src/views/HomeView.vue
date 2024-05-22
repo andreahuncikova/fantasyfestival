@@ -13,7 +13,7 @@
     <div class="w-full pt-16">
       <h1>FANTASY QUEST ESBJERG</h1>
     </div>
-    <div class="w-full lg:w-6/12 flex flex-col justify-between py-6">
+    <div class="w-full lg:w-9/12 flex flex-col justify-between py-6">
       <div class="mb-auto">
         <h3>14 September 2024</h3>
         <p class="mt-4">
@@ -118,7 +118,7 @@
                 <div class="w-full">
             <h1 class="h1blue font-bold">FAMILY QUEST</h1>
         </div>
-                <h3 class="h3blue pt-10">10:00 - 14:00</h3>
+                <h3 class="h3blue mt-10">10:00 - 14:00</h3>
                     <p class="pblue mt-2">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt. Here you meet magical creatures who set you some tasks and challenges along the way towards the goal, which you must solve together to complete the Quest. The degree of difficulty has been lowered so that the children can help solve the tasks. But make no mistake, all good strength and cooperation skills are needed if you are to help save Esbjerg. As an added bonus, you can meet the YouTuber Salmon Rider during the Quest around the streets of Esbjerg.</p>
                 </div>
                 <div class="flex pt-3">
@@ -147,7 +147,7 @@
       <div class="w-full">
     <h1>EVENING QUEST</h1>
   </div>
-      <h3 class="mt-6">18:00 - 22:00</h3>
+      <h3 class="mt-10">18:00 - 22:00</h3>
       <p class="mt-2">When twilight begins to descend over Esbjerg, the level of difficulty in the Evening Quest is turned up. Now you really have to think creatively and solve tasks that require both courage, cooperation and ingenuity in order for you to complete the quest and save Esbjerg. <br> If you love solving puzzles and cracking codes, don't miss out on this ultimate experience. We send you and your friends on your ultimate adventure in Esbjerg's streets and alleys. Here you will have to collaborate and devise new solutions to complete the AftenQuest.</p>
     </div>
     <div class="flex pt-3"> 

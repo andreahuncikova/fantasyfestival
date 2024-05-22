@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'prompt': ['Prompt', 'sans-serif'],
+        'philosopher': ['Philosopher', 'sans-serif'],
       },
       maxHeight: {
         '750': '750px',

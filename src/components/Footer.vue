@@ -14,7 +14,7 @@
             6700 Esbjerg
           </p>
         </div>
-        <div class="col-3 pb-10 md:pb-0"> <!-- Apply text-right class -->
+        <div class="col-3 pb-10 md:pb-0"> 
           <h4 class="font-semibold text-lg py-1 md:py-3">OPENING HOURS</h4>
           <p class="pb-3">
             Saturday, September 14th:<br>
@@ -25,7 +25,7 @@
             from 10 AM to 4 PM
           </p>
         </div>
-        <div class="col-3 pb-10 md:pb-0"> <!-- Apply text-right class -->
+        <div class="col-3 pb-10 md:pb-0"> 
           <h4 class="font-semibold text-lg py-1 md:py-3">CONTACT US</h4>
           <p class="pb-3">
             Email:<br>

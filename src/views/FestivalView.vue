@@ -1,12 +1,12 @@
 <template>
   <main>
     <div class="container mx-auto w-10/12 pt-16 flex flex-wrap">
-      <div class="w-full lg:w-7/12 flex flex-col justify-between py-6">
+      <div class="w-full lg:w-7/12 flex flex-col justify-between pt-6">
         <div class="mb-auto">
           <div class="w-full ">
         <h1>FANTASY FESTIVAL</h1>
       </div>
-          <h2>Explore more about the festival</h2>
+          <h2 class="mt-10">Explore more about the festival</h2>
           <p class="mt-2">Fantasy Festival Esbjerg is an enchanting event that celebrates the wonders of fantasy literature and the power of imagination. Since its inception in 2015, the festival has grown exponentially, attracting approximately 8,000 attendees in 2022. From immersive storytelling sessions to interactive workshops, attendees can explore the rich tapestry of the fantasy genre. Join us for a weekend filled with magic, adventure, and endless possibilities at Fantasy Festival Esbjerg!</p>
           <h3 class="mt-6">Join us at Fantasy Festival Esbjerg!</h3>
         </div>
@@ -15,7 +15,8 @@
           <a href="/program" class="button ml-6">SEE PROGRAM</a>
         </div>
       </div>
-      <div class="w-full lg:w-4/12 justify-end">
+      <div class="w-1/12"></div>
+      <div class="w-full lg:w-4/12 justify-end mt-10">
         <img src="@/assets/fantasyfestival.jpg" alt="" class="images festivalpicture">
       </div>
     </div>
