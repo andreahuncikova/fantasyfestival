@@ -18,20 +18,12 @@
                 <div class="border p-6 rounded-lg imagesblue">
                     <h2 class="h2blue">14 SEPTEMBER 2024</h2>
                     <p>Saturday, September 16th offers various lectures, signings, and activities for both children and adults.</p>
-                
-                    <div class="flex justify-center pt-3">
-                        <a href="https://example.com" class="button">SEE MORE</a>
-                        <a href="/program" class="button ml-6">BUY TICKETS</a>
-                    </div>
+               
                 </div>
                 <div class="border p-6 rounded-lg imagesblue">
                     <h2 class="h2blue">15 SEPTEMBER 2024</h2>
                     <p>Don't miss the Sunday program, where you can attend lectures, signings, and other interesting activities.</p>
                 
-                    <div class="flex justify-center pt-3">
-                        <a href="https://example.com" class="button">SEE MORE</a>
-                        <a href="/program" class="button ml-6">BUY TICKETS</a>
-                    </div>
                 </div>
             </div>
     </div>

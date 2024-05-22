@@ -1,7 +1,7 @@
 <template>
   <footer>
-    <div class="w-full">
-            <img src="@/assets/oblaky-fialove.svg" alt="clouds" class="w-full">
+    <div class="w-full mt-20">
+            <img src="@/assets/clouds.svg" alt="clouds" class="w-full">
       </div>
       <div class="container-info">
     <div class="container mx-auto w-10/12 py-6">
@@ -72,7 +72,7 @@
 
 <style lang="scss" scoped>
   .container-info {
-    background-image: linear-gradient(to bottom, #6d2790, #2b1137);
+    background-image: linear-gradient(to bottom, #9b5fc6, #401156);
   }
 
   .line { 
