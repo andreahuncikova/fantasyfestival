@@ -10,7 +10,7 @@
     </div>
 <!---------------------fantasy quest esbjerg info------------------------------->
 <div class="container mx-auto w-10/12 flex flex-wrap">
-    <div class="w-full pt-16">
+    <div class="w-full pt-40">
       <h1>FANTASY QUEST ESBJERG</h1>
     </div>
     <div class="w-full lg:w-9/12 flex flex-col justify-between py-6">
@@ -56,7 +56,7 @@
     </div>
   </div>
 <!---------------------quest read more------------------------------->
-        <h1 class="mx-auto w-10/12 flex justify-end mt-40">MEET OUR CHARACTERS</h1>
+        <h1 class="mx-auto w-10/12 flex justify-end mt-52">MEET OUR CHARACTERS</h1>
   <div class="grid-wrapper mx-auto w-10/12 mt-20">
     <div class="card">
       <div class="card-inner">
@@ -110,7 +110,7 @@
     </div>
   </div>    
 <!---------------------family quest info------------------------------->
-<div class="familyquest flex justify-center flex-col items-center mt-52">  
+<div class="familyquest flex justify-center flex-col items-center mt-64">  
 
 <div class="container mx-auto w-10/12">
         <div class="w-full lg:flex">
@@ -134,7 +134,7 @@
     </div>
   </div>
     <!---------------------evening quest info------------------------------->
-<div class="container mx-auto w-10/12 flex flex-wrap mt-20">
+<div class="container mx-auto w-10/12 flex flex-wrap mt-64">
   
   <div class="w-full lg:w-4/12 py-6 justify-end">
     <img src="@/assets/eveningquest.jpg" class="images">
