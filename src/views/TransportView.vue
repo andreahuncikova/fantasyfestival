@@ -1,6 +1,6 @@
 <template>
     <main>
-    <div class="container pt-16 flex content-center">
+    <div class="container pt-32 flex content-center">
         <div class="row flex flex-row">
             <div class="col w-1/12"></div>
             <div class="col w-8/12">
@@ -21,7 +21,7 @@
         <div class="container mx-auto w-10/12 flex justify-center">
         <div class="row flex flex-row items-center">
             <div class="w-full lg:w-6/12 justify-end p-6">
-                <img src="@/assets/transportpicture.jpg" alt="" class="imagesblue festivalpicture">
+                <img src="@/assets/horse.jpg" alt="" class="imagesblue festivalpicture">
             </div>
             <div class="col w-1/12"></div>
             <div class="col">
