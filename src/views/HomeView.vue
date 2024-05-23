@@ -1,12 +1,10 @@
-
-
 <template>
   
 <main>
     <div class="hero">
-      <!-- <video autoplay loop muted plays-inline>
-        <source src="@/assets/videjko.mp4" type="video/mp4">
-      </video> -->
+      <video autoplay loop muted plays-inline>
+        <source src="@/assets/fantasytitle.mp4" type="video/mp4">
+      </video>
     </div>
 <!---------------------fantasy quest esbjerg info------------------------------->
 <div id="app">
@@ -186,9 +184,8 @@ export default {
 
 <style lang="scss" scoped>
   .hero {
-    width: 100%;
-    max-height: 100vh;
-    position: relative;
+    max-width: 100%;
+    min-height: 100vh;
 }
 
   .familyquest {
