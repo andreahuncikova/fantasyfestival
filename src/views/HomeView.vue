@@ -1,14 +1,14 @@
 <template>
-  
-<main>
-    <div class="hero">
-      <video autoplay loop muted plays-inline>
+  <main>
+    <div class="hero relative h-screen overflow-hidden cursor-pointer" @click="scrollToContent">
+      <video class="w-full h-full object-cover" autoplay loop muted playsinline>
         <source src="@/assets/fantasytitle.mp4" type="video/mp4">
       </video>
+      <div class="video-overlay"></div>
     </div>
 <!---------------------fantasy quest esbjerg info------------------------------->
 <div id="app">
-    <div class="container mx-auto w-10/12 flex flex-wrap">
+    <div class="container-fantasyquest mx-auto w-10/12 flex flex-wrap">
         <div class="w-full pt-40">
             <h1>FANTASY QUEST ESBJERG</h1>
         </div>
@@ -177,15 +177,21 @@ export default {
   methods: {
     toggleMoreText() {
       this.showMoreText = !this.showMoreText;
+    },
+    scrollToContent() {
+  const nextContainer = document.querySelector('.container-fantasyquest');
+  if (nextContainer) {
+    nextContainer.scrollIntoView({ behavior: 'smooth' });
+  }
     }
   }
 }
+
 </script>
 
 <style lang="scss" scoped>
-  .hero {
-    max-width: 100%;
-    min-height: 100vh;
+.hero {
+  background: var(--vt-c-dark);
 }
 
   .familyquest {
