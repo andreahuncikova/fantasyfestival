@@ -12,16 +12,16 @@
           </button>
           <ul :class="menuOpen ? 'block' : 'hidden'" class="md:flex flex-col md:flex-row md:space-x-4 pb-3">
             <li>
-              <RouterLink to="/" class="nav-link font-bold font-philosopher text-xl" :class="{ 'active-link': $route.path === '/' }">QUEST</RouterLink>
+              <RouterLink to="/" class="nav-link font-bold font-philosopher text-lg" :class="{ 'active-link': $route.path === '/' }">QUEST</RouterLink>
             </li>
             <li>
-              <RouterLink to="/festival" class="nav-link font-bold font-philosopher text-xl" :class="{ 'active-link': $route.path === '/festival' }">FESTIVAL</RouterLink>
+              <RouterLink to="/festival" class="nav-link font-bold font-philosopher text-lg" :class="{ 'active-link': $route.path === '/festival' }">FESTIVAL</RouterLink>
             </li>
             <li>
-              <RouterLink to="/program" class="nav-link font-bold font-philosopher text-xl" :class="{ 'active-link': $route.path === '/program' }">PROGRAM</RouterLink>
+              <RouterLink to="/program" class="nav-link font-bold font-philosopher text-lg" :class="{ 'active-link': $route.path === '/program' }">PROGRAM</RouterLink>
             </li>
             <li>
-              <RouterLink to="/transport" class="nav-link font-bold font-philosopher text-xl" :class="{ 'active-link': $route.path === '/transport' }">TRANSPORT</RouterLink>
+              <RouterLink to="/transport" class="nav-link font-bold font-philosopher text-lg" :class="{ 'active-link': $route.path === '/transport' }">TRANSPORT</RouterLink>
             </li>
           </ul>
         </div>
