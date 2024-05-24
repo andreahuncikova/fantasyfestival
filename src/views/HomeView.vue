@@ -62,7 +62,7 @@
     </div>
 </div>
 
-<!---------------------quest read more------------------------------->
+<!---------------------characters------------------------------->
         <h1 class="mx-auto w-10/12 flex justify-end mt-52">MEET OUR CHARACTERS</h1>
   <div class="grid-wrapper mx-auto w-10/12 mt-20">
     <div class="card">
