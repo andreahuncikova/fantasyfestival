@@ -1,16 +1,14 @@
-
-
 <template>
-  
-<main>
-    <div class="hero">
-      <!-- <video autoplay loop muted plays-inline>
-        <source src="@/assets/videjko.mp4" type="video/mp4">
-      </video> -->
+  <main>
+    <div class="hero pt-10 relative h-screen overflow-hidden cursor-pointer" @click="scrollToContent">
+      <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+        <source src="@/assets/fantasytitle.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
     </div>
 <!---------------------fantasy quest esbjerg info------------------------------->
 <div id="app">
-    <div class="container mx-auto w-10/12 flex flex-wrap">
+    <div class="container-fantasyquest mx-auto w-10/12 flex flex-wrap">
         <div class="w-full pt-40">
             <h1>FANTASY QUEST ESBJERG</h1>
         </div>
@@ -129,19 +127,19 @@
                 <h3 class="h3blue mt-10">10:00 - 14:00</h3>
                     <p class="pblue mt-2">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt. Here you meet magical creatures who set you some tasks and challenges along the way towards the goal, which you must solve together to complete the Quest. The degree of difficulty has been lowered so that the children can help solve the tasks. But make no mistake, all good strength and cooperation skills are needed if you are to help save Esbjerg. As an added bonus, you can meet the YouTuber Salmon Rider during the Quest around the streets of Esbjerg.</p>
                 </div>
-                <div class="flex pt-3">
+                <div class="flex pb-6">
                   <a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3" class="buttonblue">BUY TICKETS</a>
                 </div>
             </div>
             <div class="w-1/12"></div>
-            <div class="w-full lg:w-4/12">
+            <div class="w-full lg:w-4/12 pb-6">
                 <img src="@/assets/familyquest.jpg" alt="Festival Picture" class="imagesblue w-full rounded-lg">
             </div>
         </div>
     </div>
   </div>
     <!---------------------evening quest info------------------------------->
-<div class="container mx-auto w-10/12 flex flex-wrap mt-64">
+<div class="container mx-auto w-10/12 flex flex-wrap mt-20">
   
   <div class="w-full lg:w-4/12 py-6 justify-end">
     <img src="@/assets/eveningquest.jpg" class="images">
@@ -179,16 +177,21 @@ export default {
   methods: {
     toggleMoreText() {
       this.showMoreText = !this.showMoreText;
+    },
+    scrollToContent() {
+  const nextContainer = document.querySelector('.container-fantasyquest');
+  if (nextContainer) {
+    nextContainer.scrollIntoView({ behavior: 'smooth' });
+  }
     }
   }
 }
+
 </script>
 
 <style lang="scss" scoped>
-  .hero {
-    width: 100%;
-    max-height: 100vh;
-    position: relative;
+.hero {
+  background: var(--vt-c-dark);
 }
 
   .familyquest {

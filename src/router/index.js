@@ -27,7 +27,16 @@ const router = createRouter({
       name: 'transport',
       component: () => import('../views/TransportView.vue')
     }
-  ]
-})
+  ],
+    scrollBehavior(to, from, savedPosition) {
+      if (savedPosition) {
+        // if savedPosition is available, use it
+        return savedPosition
+      } else {
+        // else, scroll to the top of the page
+        return { top: 0 }
+      }
+    }
+    })
 
 export default router

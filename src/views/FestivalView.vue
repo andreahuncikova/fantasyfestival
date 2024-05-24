@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="container mx-auto w-10/12 pt-16 flex flex-wrap">
+    <div class="container mx-auto w-10/12 pt-32 flex flex-wrap">
       <div class="w-full lg:w-7/12 flex flex-col justify-between pt-6">
         <div class="mb-auto">
           <div class="w-full ">

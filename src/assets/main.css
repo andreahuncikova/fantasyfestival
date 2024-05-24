@@ -68,17 +68,17 @@ p {
 }
 
 .images {
-    box-shadow: 0 0 20px var(--vt-c-purple); /* Adjust the values as needed */
+    box-shadow: 0 0 20px var(--vt-c-purple); 
     border: 3px solid var(--vt-c-purple);
-    border-radius: 10px; /* Optional: Add border radius for rounded corners */
-    overflow: hidden; /* Optional: Ensure that the shadow doesn't overflow */
+    border-radius: 10px; 
+    overflow: hidden; 
 }
 
 .imagesblue {
-    box-shadow: 0 0 20px var(--vt-c-dark); /* Adjust the values as needed */
+    box-shadow: 0 0 20px var(--vt-c-dark);
     border: 3px solid var(--vt-c-dark);
-    border-radius: 10px; /* Optional: Add border radius for rounded corners */
-    overflow: hidden; /* Optional: Ensure that the shadow doesn't overflow */
+    border-radius: 10px; 
+    overflow: hidden; 
 }
 
 .button {
@@ -102,9 +102,9 @@ p {
     position: absolute;
     top: 100;
     right: 0;
-    width: 30%; /* Adjust the width as needed */
+    width: 30%; 
     height: 60%;
-    z-index: 1; /* Ensure moon is behind the map */
+    z-index: 1; 
 }
 
 .buttonblue {
@@ -122,7 +122,7 @@ p {
 }
 
 .buttonblue:hover {
-    color: #fff; /* White text on hover */
+    color: #fff; 
     background-color: var(--vt-c-dark);
     border-color: var(--vt-c-dark);
     transition: 0.3s;
@@ -146,6 +146,9 @@ p {
         font-size: 18px;
     }
     h2 {
+        font-size: 20px;
+    }
+    .h2blue {
         font-size: 20px;
     }
     h3 {

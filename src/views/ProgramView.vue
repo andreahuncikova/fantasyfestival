@@ -3,42 +3,38 @@
 
     <div class="flex items-center justify-center h-screen w-screen">
         <div class="w-8/12 h-full">
-            <div class="h-full p-10">
-                <iframe class="inset-0 w-full h-5/6 images" src="https://www.youtube.com/embed/a1Qf8HLr4LE?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="h-full pt-28 p-10">
+                <iframe class="inset-0 w-full h-full images" src="https://www.youtube.com/embed/a1Qf8HLr4LE?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
   <!-------------------- program --------------------->  
-  <div class="pt-16 flex justify-end mx-auto w-10/12">
-        <h1>PROGRAM</h1>
+  <div class="pt-32 mx-auto w-10/12">
+      <h1 class="text-end">PROGRAM</h1>
     </div>
-    <div class="container-program mx-auto w-full">
-        <div class="row row-flex mx-auto w-10/12 pt-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20 ">
-                <div class="border p-6 rounded-lg imagesblue">
-                    <h2 class="h2blue">14 SEPTEMBER 2024</h2>
-                    <p>Saturday, September 16th offers various lectures, signings, and activities for both children and adults.</p>
-               
-                </div>
-                <div class="border p-6 rounded-lg imagesblue">
-                    <h2 class="h2blue">15 SEPTEMBER 2024</h2>
-                    <p>Don't miss the Sunday program, where you can attend lectures, signings, and other interesting activities.</p>
-                
-                </div>
-            </div>
-    <div class="row row-flex mx-auto w-10/12 pt-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div class="border buttonblue p-6 text-xl rounded-lg">
-                    <h3>CHECK OUT THE SATURDAY PROGRAM</h3>
-                </div>
-                <div class="border buttonblue text-xl rounded-lg">
-                    <h3>CHECK OUT THE SUNDAY PROGRAM</h3>
-                </div>
-            </div>
+      <div class="container-program w-full">
+      <div class="container md:mt-8 mx-auto flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-20 w-10/12">
+        <div class="w-full md:w-1/2">
+          <div class="border p-6 rounded-lg imagesblue">
+            <h2 class="h2blue">14 SEPTEMBER 2024</h2>
+            <p class="mt-2">Saturday, September 16th boasts a diverse lineup of engaging lectures, exciting signings, and fun-filled activities suitable for both the young and the young at heart, promising a day of unforgettable moments.</p>
+          </div>
+          <div class="flex mt-10 justify-center"> 
+             <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" class="buttonblue">CHECK OUT THE SATURDAY PROGRAM</a>
+         </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <div class="border p-6 rounded-lg imagesblue">
+            <h2 class="h2blue">15 SEPTEMBER 2024</h2>
+            <p class="mt-2">The Sunday program unfurls with a rich array of captivating lectures, exclusive signings, and a myriad of immersive activities tailored to delight attendees of all ages, promising an unforgettable day of exploration and discovery.</p>
+          </div>
+          <div class="flex mt-10 justify-center"> 
+             <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" class="buttonblue">CHECK OUT THE SUNDAY PROGRAM</a>
+         </div>
+      </div>
     </div>
-</div>
-</div>
-</main>
+    </div>
+  </main>
 
 </template>
 
@@ -54,6 +50,27 @@
     min-height: 800px;
     max-width: 100%;
     background-image: url('@/assets/backgroundsmaller.svg'); 
+}
+
+.buttonblue {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 80px;
+    border: 3px solid var(--vt-c-dark);
+    color: var(--vt-c-dark);
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.buttonblue:hover {
+    color: #fff; 
+    background-color: var(--vt-c-dark);
+    border-color: var(--vt-c-dark);
+    transition: 0.3s;
 }
 
 </style>
