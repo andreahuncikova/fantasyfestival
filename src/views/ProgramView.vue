@@ -52,4 +52,25 @@
     background-image: url('@/assets/backgroundsmaller.svg'); 
 }
 
+.buttonblue {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 80px;
+    border: 3px solid var(--vt-c-dark);
+    color: var(--vt-c-dark);
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.buttonblue:hover {
+    color: #fff; 
+    background-color: var(--vt-c-dark);
+    border-color: var(--vt-c-dark);
+    transition: 0.3s;
+}
+
 </style>

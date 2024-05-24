@@ -1,6 +1,6 @@
 <template>
     <main>
-    <div class="container pt-32 flex content-center">
+    <div class="container pt-40 flex content-center">
         <div class="row flex flex-row">
             <div class="col w-1/12"></div>
             <div class="col w-8/12">
