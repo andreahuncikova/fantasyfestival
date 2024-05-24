@@ -70,6 +70,36 @@
   </footer>
 </template>
 
+<script>
+import anime from 'animejs/lib/anime.es.js';
+
+export default {
+  name: 'FooterComponent',
+  mounted() {
+    const clouds = document.getElementById('clouds');
+    clouds.style.position = 'relative';
+    clouds.style.bottom = '-100px';
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          anime({
+            targets: '#clouds',
+            bottom: '0px',
+            duration: 1000,
+            easing: 'easeInOutSine'
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    observer.observe(this.$refs.footer);
+  }
+}
+</script>
+
+
 <style lang="scss" scoped>
   .container-info {
     background-image: linear-gradient(to bottom, #9b5fc6, #401156);
