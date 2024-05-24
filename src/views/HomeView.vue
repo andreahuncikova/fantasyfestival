@@ -1,8 +1,8 @@
 <template>
   <main>
-    <div class="hero pt-10 relative h-screen overflow-hidden cursor-pointer" @click="scrollToContent">
-      <video class="w-full h-full object-cover" autoplay loop muted playsinline>
-        <source src="@/assets/fantasytitle.mp4" type="video/mp4">
+    <div class="hero relative h-screen overflow-hidden cursor-pointer" @click="scrollToContent">
+      <video class="w-full h-full object-cover px-20" autoplay loop muted playsinline>
+        <source src="@/assets/fantasytitle1.mp4" type="video/mp4">
       </video>
       <div class="video-overlay"></div>
     </div>
@@ -192,7 +192,39 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
-  background: var(--vt-c-dark);
+  background-image: linear-gradient(to right, #0d012b, #08064a 20%, var(--vt-c-dark) 50%, #08064a 80%, #0d012b);
+}
+
+
+.hero::before,
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 20%; /* Adjust as needed */
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), #0d012b, rgba(13, 1, 43, 0));
+}
+
+.hero::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* Dark overlay */
+  z-index: 1;
 }
 
   .familyquest {

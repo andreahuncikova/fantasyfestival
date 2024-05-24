@@ -42,7 +42,7 @@
   
   <style lang="scss" scoped>
   .navbar {
-    background-image: linear-gradient(to bottom, #0f022f 80%, rgba(46, 14, 117, 0.02));
+    // background-image: linear-gradient(to bottom, #0f022f 80%, rgba(46, 14, 117, 0.02));
     color: white;
     position: fixed;
     z-index: 2000;
