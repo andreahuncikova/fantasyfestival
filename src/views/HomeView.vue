@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="hero relative h-screen overflow-hidden cursor-pointer" @click="scrollToContent">
-      <video class="w-full h-full object-cover px-0 sm:px-24 py-52" autoplay loop muted playsinline>
+      <video class="w-full sm:h-full object-cover px-0 sm:px-0 sm:px-24 py-32 sm:py-0" autoplay loop muted playsinline>
         <source src="@/assets/fantasytitle1.mp4" type="video/mp4">
       </video>
     </div>
@@ -187,6 +187,18 @@ export default {
     }
   }
 }
+var animation = anime.timeline({
+  autoplay: false
+})
+
+
+animation
+.add({
+  targets: '#moon-background',
+  targets: '.css-selector-demo .el',
+  translateX: 250
+});
+
 </script>
 
 <style lang="scss" scoped>
@@ -282,28 +294,18 @@ export default {
       text-align: center;
     }
 
-    .hero video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-.video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Transparentný overlay */
-}
+
 
 @media (max-width: 768px) {
   .hero {
-    padding-top: 1rem; /* Menší padding pre mobily */
+    padding-top: 100px;
+
   }
   
   .hero video {
-    object-fit: cover; /* Zachováme objekt-fit cover pre video */
+    height: auto;
+    object-fit: cover;
   }
 }
 
