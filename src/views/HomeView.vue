@@ -193,6 +193,11 @@ export default {
 <style lang="scss" scoped>
 .hero {
   background: var(--vt-c-dark);
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  cursor: pointer;
+  padding-top: 2.5rem;
 }
 
   .familyquest {
@@ -259,6 +264,32 @@ export default {
       box-sizing: border-box;
       text-align: center;
     }
+
+    .hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Transparentný overlay */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 1rem; /* Menší padding pre mobily */
+  }
+  
+  .hero video {
+    object-fit: cover; /* Zachováme objekt-fit cover pre video */
+  }
+}
+
 </style>
 
 
