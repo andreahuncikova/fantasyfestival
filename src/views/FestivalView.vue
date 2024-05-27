@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="container mx-auto w-10/12 pt-32 flex flex-wrap">
+    <div class="container mx-auto w-10/12 pt-24 sm:pt-32 flex flex-wrap">
       <div class="w-full lg:w-7/12 flex flex-col justify-between pt-6">
         <div class="mb-auto">
           <div class="w-full ">
@@ -24,7 +24,7 @@
     <h1 class="flex justify-end mt-20 md:mt-40 w-10/12 mx-auto">GALLERY</h1>
 
     <div class="container-gallery flex items-center justify-center min-h-screen">
-      <div class="grid grid-cols-12 grid-rows-4 gap-6 w-full mx-auto md:max-h-750 px-6 md:px-10">
+      <div class="grid grid-cols-12 grid-rows-4 gap-2 sm:gap-6 w-full mx-auto md:max-h-750 px-6 md:px-10">
         <div class="col-span-6 md:col-span-2 row-span-1 rounded-lg overflow-hidden">
           <img src="@/assets/festival1.jpg" alt="Moon Image 1" class="w-full h-full object-cover gallery-image">
         </div>
