@@ -1,14 +1,14 @@
 <template>
   <main>
     <div class="hero relative h-screen overflow-hidden cursor-pointer" @click="scrollToContent">
-      <video class="w-full h-full object-cover px-0 sm:px-24 py-52" autoplay loop muted playsinline>
+      <video class="w-full h-full object-cover px-0 sm:px-24 py-40 sm:py-0" autoplay loop muted playsinline>
         <source src="@/assets/fantasytitle1.mp4" type="video/mp4">
       </video>
     </div>
 <!---------------------fantasy quest esbjerg info------------------------------->
 <div id="app">
     <div class="container-fantasyquest smalldevicesbackgroundpurple mx-auto w-10/12 flex flex-wrap">
-        <div class="w-full pt-40">
+        <div class="w-full pt-0 sm:pt-40">
             <h1>FANTASY QUEST ESBJERG</h1>
         </div>
         <div class="w-full lg:w-9/12 flex flex-col justify-between py-6">
@@ -35,12 +35,12 @@
                 </button>
             </div>
         </div>
-        <div class="col w-3/12 flex justify-end items-end moon-background mt-16">
+        <div class="col w-3/12 flex justify-end items-end moon-background mt-16 hidden sm:flex">
         </div>
     </div>
 
     <div v-if="showMoreText" class="familyquest flex items-center justify-center min-h-screen flex-col mt-8">
-        <div class="w-10/12 mb-16">
+        <div class="w-10/12 mb-10 sm:mb-20 mt-10 sm:mt-0">
             <p> In the old days they said...
             <br>
             ... that evil would come from the sea. Through generations that tale was passed on. You heard it when Esbjerg was founded in 1868. You always kept an eye on the sea. To the west. 
@@ -60,8 +60,8 @@
 </div>
 
 <!---------------------characters------------------------------->
-        <h1 class="mx-auto w-10/12 flex justify-end mt-52">MEET OUR CHARACTERS</h1>
-  <div class="grid-wrapper mx-auto w-10/12 mt-20">
+        <h1 class="mx-auto w-10/12 flex justify-end mt-20 sm:mt-52">MEET OUR CHARACTERS</h1>
+  <div class="grid-wrapper mx-auto w-10/12 mt-10 sm:mt-20">
     <div class="card">
       <div class="card-inner">
         <div class="card-front">
@@ -114,48 +114,48 @@
     </div>
   </div>    
 <!---------------------family quest info------------------------------->
-<div class="familyquest flex justify-center flex-col items-center mt-64">  
+<div class="familyquest flex justify-center flex-col items-center mt-32 sm:mt-64">  
 
 <div class="container mx-auto w-10/12">
         <div class="w-full lg:flex">
             <div class="w-full lg:w-7/12 flex flex-col justify-between">
               <div class="mb-auto">
                 <div class="w-full">
-            <h1 class="h1blue font-bold">FAMILY QUEST</h1>
+            <h1 class="h1blue font-bold mt-10 sm:mt-0">FAMILY QUEST</h1>
         </div>
-                <h3 class="h3blue mt-10">10:00 - 14:00</h3>
+                <h3 class="h3blue mt-4 sm:mt-10">10:00 - 14:00</h3>
                     <p class="pblue mt-2">The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt. Here you meet magical creatures who set you some tasks and challenges along the way towards the goal, which you must solve together to complete the Quest. The degree of difficulty has been lowered so that the children can help solve the tasks. But make no mistake, all good strength and cooperation skills are needed if you are to help save Esbjerg. As an added bonus, you can meet the YouTuber Salmon Rider during the Quest around the streets of Esbjerg.</p>
                 </div>
-                <div class="flex pb-6">
+                <div class="flex pb-10 sm:pb-16 mt-5 sm:mt-0">
                   <a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3" class="buttonblue">BUY TICKETS</a>
                 </div>
             </div>
             <div class="w-1/12"></div>
-            <div class="w-full lg:w-4/12 pb-6">
+            <div class="w-full lg:w-4/12 pb-16 mt-3 sm:mt-0">
                 <img src="@/assets/familyquest.jpg" alt="Festival Picture" class="imagesblue w-full rounded-lg">
             </div>
         </div>
     </div>
   </div>
     <!---------------------evening quest info------------------------------->
-<div class="container mx-auto w-10/12 flex flex-wrap mt-20">
+<div class="container mx-auto w-10/12 flex flex-wrap mt-10 sm:mt-20">
   
-  <div class="order-2 sm:order-1 w-full lg:w-4/12 py-6 justify-end">
+  <div class="order-3 sm:order-1 w-full lg:w-4/12 py-6 justify-end">
     <img src="@/assets/eveningquest.jpg" class="images">
   </div>
 
-  <div class="w-1/12 hidden sm:block"></div>
+  <div class="order-2 sm:order-2 w-1/12 hidden sm:block"></div>
 
-  <div class="w-full lg:w-7/12 flex flex-col justify-between py-6">
+  <div class="order-1 sm:order-3 w-full lg:w-7/12 flex flex-col justify-between py-6">
     
     <div class="mb-auto"> 
       <div class="w-full">
     <h1>EVENING QUEST</h1>
   </div>
-      <h3 class="mt-10">18:00 - 22:00</h3>
+      <h3 class="mt-4 sm:mt-10">18:00 - 22:00</h3>
       <p class="mt-2">When twilight begins to descend over Esbjerg, the level of difficulty in the Evening Quest is turned up. Now you really have to think creatively and solve tasks that require both courage, cooperation and ingenuity in order for you to complete the quest and save Esbjerg. <br> If you love solving puzzles and cracking codes, don't miss out on this ultimate experience. We send you and your friends on your ultimate adventure in Esbjerg's streets and alleys. Here you will have to collaborate and devise new solutions to complete the AftenQuest.</p>
     </div>
-    <div class="flex pt-3"> 
+    <div class="flex mt-5 sm:mt-0"> 
       <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" class="button">BUY TICKETS</a>
     </div>
   </div>
@@ -282,7 +282,7 @@ export default {
       text-align: center;
     }
 
-    .hero video {
+.hero video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -298,9 +298,6 @@ export default {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    padding-top: 1rem; /* Menší padding pre mobily */
-  }
   
   .hero video {
     object-fit: cover; /* Zachováme objekt-fit cover pre video */
