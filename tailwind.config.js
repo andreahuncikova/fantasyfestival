@@ -14,6 +14,9 @@ export default {
         '1000': '1500px',
         '300': '300px',
       },
+      height: {
+        '700': '700px',
+      },
     },
   },
   plugins: [],

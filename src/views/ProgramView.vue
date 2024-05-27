@@ -12,8 +12,8 @@
   <div class="pt-32 mx-auto w-10/12">
       <h1 class="text-end">PROGRAM</h1>
     </div>
-      <div class="container-program w-full">
-      <div class="container md:mt-8 mx-auto flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-20 w-10/12">
+      <div class="container-program smalldevicesbackgroundpurple w-full">
+      <div class="container py-8 mx-auto flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-20 w-10/12">
         <div class="w-full md:w-1/2">
           <div class="border p-6 rounded-lg imagesblue">
             <h2 class="h2blue">14 SEPTEMBER 2024</h2>
@@ -72,5 +72,17 @@
     border-color: var(--vt-c-dark);
     transition: 0.3s;
 }
+
+@media (max-width: 768px) {
+    .button {
+        font-size: medium;
+        padding: 5px 10px;
+    }
+    .buttonblue {
+        font-size: medium;
+        padding: 5px 10px;
+    }
+}
+
 
 </style>

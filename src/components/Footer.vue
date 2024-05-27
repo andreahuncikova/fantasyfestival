@@ -51,7 +51,7 @@
         <div class="line"></div>
       </div>
       
-      <div class="row flex flex-row justify-center items-center gap-6 md:gap-16">
+      <div class="row flex flex-row justify-center items-center gap-10 md:gap-16">
         <a href="https://oplev.esbjerg.dk/">
             <img src="@/assets/oplev.svg" alt="Oplev">
           </a>

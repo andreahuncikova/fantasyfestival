@@ -1,13 +1,13 @@
 <template>
   <main>
     <div class="hero relative h-screen overflow-hidden cursor-pointer" @click="scrollToContent">
-      <video class="w-full h-full object-cover px-24" autoplay loop muted playsinline>
+      <video class="w-full h-full object-cover px-0 sm:px-24 py-52" autoplay loop muted playsinline>
         <source src="@/assets/fantasytitle1.mp4" type="video/mp4">
       </video>
     </div>
 <!---------------------fantasy quest esbjerg info------------------------------->
 <div id="app">
-    <div class="container-fantasyquest mx-auto w-10/12 flex flex-wrap">
+    <div class="container-fantasyquest smalldevicesbackgroundpurple mx-auto w-10/12 flex flex-wrap">
         <div class="w-full pt-40">
             <h1>FANTASY QUEST ESBJERG</h1>
         </div>
@@ -140,7 +140,7 @@
     <!---------------------evening quest info------------------------------->
 <div class="container mx-auto w-10/12 flex flex-wrap mt-20">
   
-  <div class="w-full lg:w-4/12 py-6 justify-end">
+  <div class="order-2 sm:order-1 w-full lg:w-4/12 py-6 justify-end">
     <img src="@/assets/eveningquest.jpg" class="images">
   </div>
 

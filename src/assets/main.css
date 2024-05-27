@@ -168,5 +168,17 @@ p {
         font-size: medium;
         padding: 5px 10px;
     }
+    .container-parking{
+    background-color: var(--vt-c-purple);
+    }
+    .container-program{
+    background-color: var(--vt-c-purple);
+    }
+    .container-gallery{
+    background-color: var(--vt-c-purple);
+    }
+    .familyquest{
+    background-color: var(--vt-c-purple);
+    }
 }
 
