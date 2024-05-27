@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="hero relative h-screen overflow-hidden cursor-pointer" @click="scrollToContent">
-      <video class="w-full h-full object-cover px-0 sm:px-24 py-40 sm:py-0" autoplay loop muted playsinline>
+      <video class="h-full object-cover px-0 sm:py-0 pt-0" autoplay loop muted playsinline>
         <source src="@/assets/fantasytitle1.mp4" type="video/mp4">
       </video>
     </div>
@@ -174,30 +174,28 @@ export default {
     return {
       showMoreText: false
     }
+    
   },
   methods: {
     toggleMoreText() {
       this.showMoreText = !this.showMoreText;
     },
     scrollToContent() {
-  const nextContainer = document.querySelector('.container-fantasyquest');
-  if (nextContainer) {
-    nextContainer.scrollIntoView({ behavior: 'smooth' });
-  }
+      const nextContainer = document.querySelector('.container-fantasyquest');
+      if (nextContainer) {
+        nextContainer.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+  },
+  mounted() {
+    anime({
+      targets: 'moon-background',
+      right: 300,
+      easing: 'easeInOutQuad',
+      duration: 1500
+    });
   }
 }
-var animation = anime.timeline({
-  autoplay: false
-})
-
-
-animation
-.add({
-  targets: '#moon-background',
-  targets: '.css-selector-demo .el',
-  translateX: 250
-});
 
 </script>
 
@@ -305,9 +303,11 @@ animation
 @media (max-width: 768px) {
   
   .hero video {
-    height: auto;
+    height: 350px;
+    margin-top: 300px;
     object-fit: cover;
   }
+
 }
 
 </style>
