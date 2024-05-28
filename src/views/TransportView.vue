@@ -1,9 +1,9 @@
 <template>
     <main>
-    <div class="container pt-32 sm:pt-40 flex content-center">
+    <div class="container pt-24 flex content-center">
         <div class="row flex flex-row">
             <div class="col w-1/12"></div>
-            <div class="col w-10/12 sm:w-8/12">
+            <div class="col w-10/12 sm:w-8/12 mt-28">
                 <h1>TRANSPORT</h1>
             <p class="mt-6">Fantasy Festival is conveniently situated with excellent access to public transportation and parking facilities.</p>
             <h3 class="mt-6">Public Transportation:</h3>
@@ -15,16 +15,16 @@
     </div>
 
     <div class="mt-24 sm:mt-60 flex justify-end mx-auto w-10/12">
-            <h1 class="mb-6">PARKING</h1>
+            <h1 class="mb-6 sm:mb-0">PARKING</h1>
         </div>
-        <div class="container-parking mx-auto w-full sm:px-4 lg:px-0">
-            <div class="container-parking-text mx-auto w-10/12 flex flex-col sm:flex-row justify-center">
-                <div class="sm:w-5/12 flex justify-center sm:justify-start p-6">
-                    <img src="@/assets/horse.jpg" alt="" class="imagesblue festivalpicture">
-                </div>
+        <div class="container-parking mx-auto w-full lg:flex sm:px-4 lg:px-0 items-center">
+            <div class="container-parking-text mx-auto w-10/12 flex flex-col sm:flex-row pb-20">
+                <div class="w-full lg:w-5/12 mt-3 sm:mt-0">
+                <img src="@/assets/horse.jpg" alt="Festival Picture" class="imagesblue w-full rounded-lg">
+            </div>
                 <div class="col w-1/12 hidden sm:block"></div>
-                <div class="col w-full mt-12 sm:w-6/12">
-                    <h3 class="h3blue pt-4">Overview of free parking in Esbjerg:</h3>
+                <div class="col w-full mt-12 sm:w-6/12 justify-between">
+                    <h3 class="h3blue">Overview of free parking in Esbjerg:</h3>
                     <p class="pt-2">It is possible to park for free at Museumspladsen, right next to the main library. The parking lot fills up quickly, so alternatively, you may have to park elsewhere.</p>
                     <p class="pt-2">It's free to park for the first two hours in downtown Esbjerg. Some places have time-limited parking.</p>
                     <h3 class="h3blue pt-16">Paid parking in downtown Esbjerg:</h3>
@@ -55,12 +55,13 @@
 }
 
 .container-parking {
-    min-height: 900px;
-    max-width: 100%;
+    min-height: 1000px;
+    width: 100%;
     background-image: url('@/assets/backgroundsmaller.svg'); 
     display: flex;
     align-content: center;
+    background-size: cover;
+    background-position: center;
 }
-
 
 </style>
