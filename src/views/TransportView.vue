@@ -15,15 +15,15 @@
     </div>
 
     <div class="mt-24 sm:mt-60 flex justify-end mx-auto w-10/12">
-            <h1>PARKING</h1>
+            <h1 class="mb-6">PARKING</h1>
         </div>
-        <div class="container-parking smalldevicesbackgroundpurple mx-auto w-full sm:px-4 lg:px-0">
+        <div class="container-parking mx-auto w-full sm:px-4 lg:px-0">
             <div class="container-parking-text mx-auto w-10/12 flex flex-col sm:flex-row justify-center">
-                <div class="sm:w-4/12 flex justify-center sm:justify-end p-6">
+                <div class="sm:w-5/12 flex justify-center sm:justify-start p-6">
                     <img src="@/assets/horse.jpg" alt="" class="imagesblue festivalpicture">
                 </div>
                 <div class="col w-1/12 hidden sm:block"></div>
-                <div class="col w-full mt-12 sm:w-5/12">
+                <div class="col w-full mt-12 sm:w-6/12">
                     <h3 class="h3blue pt-4">Overview of free parking in Esbjerg:</h3>
                     <p class="pt-2">It is possible to park for free at Museumspladsen, right next to the main library. The parking lot fills up quickly, so alternatively, you may have to park elsewhere.</p>
                     <p class="pt-2">It's free to park for the first two hours in downtown Esbjerg. Some places have time-limited parking.</p>
@@ -54,16 +54,13 @@
     width: 100%;
 }
 
-.smalldevicesbackgroundpurple {
-    min-height: 800px;
+.container-parking {
+    min-height: 900px;
     max-width: 100%;
     background-image: url('@/assets/backgroundsmaller.svg'); 
     display: flex;
     align-content: center;
 }
 
-.festivalpicture {
-    height: 700px;
-}
 
 </style>

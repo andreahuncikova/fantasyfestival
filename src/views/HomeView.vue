@@ -228,7 +228,7 @@ export default {
 
 
   .familyquest {
-    min-height: 800px;
+    min-height: 900px;
     width: 100%;
     background-image: url('@/assets/backgroundsmaller.svg');
     background-size: cover;

@@ -1,7 +1,7 @@
 <template>
     <main>
 
-    <div class="flex items-center justify-center h-screen w-screen">
+    <div class="flex items-center justify-center h-screen">
         <div class="w-10/12 h-full">
             <div class="h-full pt-32 p-10">
                 <iframe class="inset-0 w-full h-full images" src="https://www.youtube.com/embed/a1Qf8HLr4LE?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -9,8 +9,8 @@
         </div>
     </div>
   <!-------------------- program --------------------->  
-  <div class="pt-32 mx-auto w-10/12">
-      <h1 class="text-end">PROGRAM</h1>
+  <div class="py:32 pt-32 mx-auto w-10/12">
+      <h1 class="text-end mb-6">PROGRAM</h1>
     </div>
       <div class="container-program smalldevicesbackgroundpurple w-full">
       <div class="container py-8 mx-auto flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-20 w-10/12">

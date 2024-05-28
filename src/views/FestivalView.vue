@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <h1 class="flex justify-end mt-20 md:mt-40 w-10/12 mx-auto">GALLERY</h1>
+    <h1 class="flex justify-end mt-20 md:mt-40 w-10/12 mx-auto mb-6">GALLERY</h1>
 
     <div class="container-gallery flex items-center justify-center min-h-screen">
       <div class="grid grid-cols-12 grid-rows-4 gap-2 sm:gap-6 w-full mx-auto md:max-h-750 py-10 sm:py-0 px-6 md:px-10">
