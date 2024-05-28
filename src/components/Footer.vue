@@ -1,7 +1,7 @@
 <template>
-  <footer>
+  <footer ref="footer">
     <div class="w-full mt-20">
-            <img src="@/assets/clouds.svg" alt="clouds" class="w-full">
+            <img src="@/assets/clouds.svg" alt="clouds" id="clouds" class="w-full">
       </div>
       <div class="container-info">
     <div class="container mx-auto w-10/12 py-6">
@@ -86,7 +86,7 @@ export default {
           anime({
             targets: '#clouds',
             bottom: '0px',
-            duration: 1000,
+            duration: 5000,
             easing: 'easeInOutSine'
           });
           observer.unobserve(entry.target);
