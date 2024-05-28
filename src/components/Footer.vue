@@ -6,7 +6,7 @@
       <div class="container-info">
     <div class="container mx-auto w-10/12 py-6">
       <div class="row md:flex justify-between">
-        <div class="col-3 pb-10 md:pb-0">
+        <div class="col-3 pb-10 md:pb-0 text-center sm:text-left">
           <h4 class="font-semibold text-lg py-1 md:py-3">LOCATION</h4>
           <p>
             Fantasy festival<br>
@@ -14,7 +14,7 @@
             6700 Esbjerg
           </p>
         </div>
-        <div class="col-3 pb-10 md:pb-0"> 
+        <div class="col-3 pb-10 md:pb-0 text-center sm:text-left"> 
           <h4 class="font-semibold text-lg py-1 md:py-3">OPENING HOURS</h4>
           <p class="pb-3">
             Saturday, September 14th:<br>
@@ -25,7 +25,7 @@
             from 10 AM to 4 PM
           </p>
         </div>
-        <div class="col-3 pb-10 md:pb-0"> 
+        <div class="col-3 pb-10 md:pb-0 text-center sm:text-left"> 
           <h4 class="font-semibold text-lg py-1 md:py-3">CONTACT US</h4>
           <p class="pb-3">
             Email:<br>
@@ -36,7 +36,7 @@
             <a href="tel:+45 21 31 09 62">+45 21 31 09 62</a>
           </p>
         </div>
-        <div class="col-md-3 flex flex-row items-end justify-end gap-5">
+        <div class="col-md-3 flex flex-row items-center sm:items-end justify-center sm:justify-end gap-5">
           <a href="https://www.facebook.com/profile.php?id=61550749296031">
             <img src="@/assets/facebook.svg" alt="Facebook" class="socialmedia">
           </a>

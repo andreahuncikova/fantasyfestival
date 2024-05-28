@@ -140,7 +140,7 @@ export default {
 
 .close {
   position: absolute;
-  top: 15px;
+  top: 40px;
   right: 35px;
   color: #fff;
   font-size: 40px;
@@ -158,7 +158,7 @@ export default {
 @media (max-width: 768px) {
   
   .container-gallery {
-  min-height: 1500px;
+  min-height: 1100px;
 }
 
 }

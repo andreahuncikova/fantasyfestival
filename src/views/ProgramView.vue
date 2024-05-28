@@ -12,25 +12,25 @@
   <div class="pt-10 sm:pt-32 mx-auto w-10/12">
       <h1 class="text-end mb-6">PROGRAM</h1>
     </div>
-      <div class="container-program smalldevicesbackgroundpurple w-full">
+      <div class="container-program smalldevicesbackgroundpurple w-full headline">
       <div class="container py-8 mx-auto flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-20 w-10/12">
-        <div class="w-full md:w-1/2">
-          <div class="border p-6 rounded-lg imagesblue">
+        <div class="row w-full md:w-1/2 flex flex-col imagesblue items-stretch">
+        <div class="p-6 rounded-lg flex-grow">
             <h2 class="h2blue">14 SEPTEMBER 2024</h2>
             <p class="mt-2">Saturday, September 16th boasts a diverse lineup of engaging lectures, exciting signings, and fun-filled activities suitable for both the young and the young at heart, promising a day of unforgettable moments.</p>
-          </div>
-          <div class="flex mt-10 justify-center"> 
-             <a href="https://fantasyfestival.dk/program-og-aktiviteter/program/program-16-september" class="buttonblue">CHECK OUT THE SATURDAY PROGRAM</a>
-         </div>
         </div>
-        <div class="w-full md:w-1/2">
-          <div class="border p-6 rounded-lg imagesblue">
+        <div class="flex my-6 justify-center"> 
+            <a href="https://fantasyfestival.dk/program-og-aktiviteter/program/program-16-september" class="buttonblue">CHECK OUT THE SATURDAY PROGRAM</a>
+        </div>
+    </div>
+    <div class="row w-full md:w-1/2 flex flex-col imagesblue">
+        <div class="p-6 rounded-lg flex-grow">
             <h2 class="h2blue">15 SEPTEMBER 2024</h2>
             <p class="mt-2">The Sunday program unfurls with a rich array of captivating lectures, exclusive signings, and a myriad of immersive activities tailored to delight attendees of all ages, promising an unforgettable day of exploration and discovery.</p>
-          </div>
-          <div class="flex mt-10 justify-center"> 
-             <a href="https://fantasyfestival.dk/program-og-aktiviteter/program/program-17-september" class="buttonblue">CHECK OUT THE SUNDAY PROGRAM</a>
-         </div>
+        </div>
+        <div class="flex my-6 justify-center"> 
+            <a href="https://fantasyfestival.dk/program-og-aktiviteter/program/program-17-september" class="buttonblue">CHECK OUT THE SUNDAY PROGRAM</a>
+        </div>
       </div>
     </div>
     </div>
@@ -39,7 +39,7 @@
 </template>
 
 <script setup>
-
+ScrollReveal().reveal('.headline');
 </script>
 
 <style lang="scss" scoped>
