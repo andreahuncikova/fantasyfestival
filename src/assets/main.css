@@ -96,18 +96,6 @@ p {
     font-family: 'Philosopher', sans-serif;
 }
 
-.moon-background {
-    background-image: url('@/assets/moon.png'); 
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 100;
-    right: 0;
-    width: 30%; 
-    height: 60%;
-    z-index: 1; 
-}
-
 .buttonblue {
     display: inline-block;
     font-size: 20px;

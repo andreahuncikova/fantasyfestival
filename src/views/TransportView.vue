@@ -9,7 +9,7 @@
             <h3 class="mt-6">Public Transportation:</h3>
             <p>If you prefer public transportation, getting to Fantasy Festival is a breeze. The festival venue is centrally located, making it easily accessible by train. The main library, where the festival takes place, is just a short 5-minute walk from the nearest train station. Whether you're arriving from near or far, the well-connected train network ensures a smooth journey to the heart of the festival.</p>
         </div>
-            <div class="col w-3/12 flex justify-end items-end moon-background hidden sm:flex">
+            <div class="col w-2/12 flex justify-end items-end moon-background hidden sm:flex">
             </div>
         </div>
     </div>
@@ -64,4 +64,33 @@
     background-position: center;
 }
 
+@keyframes slideInGrow {
+    0% {
+        transform: translateX(100%) scale(0.5);
+        opacity: 0.5;
+    }
+
+    80% {
+        transform: translateX(0) scale(1);
+        opacity: 0.75;
+    }
+
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.moon-background {
+    background-image: url('@/assets/moon.png'); 
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 30%; 
+    height: 60%;
+    z-index: 1; 
+    animation: slideInGrow 2s ease-in-out forwards; /* Animácia príchod, postupné zväčšenie */
+}
 </style>
