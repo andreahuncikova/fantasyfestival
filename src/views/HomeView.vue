@@ -6,7 +6,7 @@
       </video>
     </div>
 <!---------------------fantasy quest esbjerg info------------------------------->
-    <div class="container-fantasyquest smalldevicesbackgroundpurple mx-auto w-10/12 flex flex-wrap">
+    <div class="container-fantasyquest smalldevicesbackgroundpurple mx-auto w-10/12 flex flex-wrap" id="fantasyquestesbjerg">
         <div class="w-full pt-16 sm:pt-40">
             <h1>FANTASY QUEST ESBJERG</h1>
         </div>
@@ -194,6 +194,30 @@ export default {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    var moonBackground = document.querySelector(".moon-background");
+    var moonVisible = false;
+    var fantasyQuestSection = document.querySelector(".container-fantasyquest");
+
+    // Funkcia na kontrolu, či sme v časti Fantasy Quest
+    function checkFantasyQuest() {
+        // Získame hranicu spodnej hrany Fantasy Quest sekcie
+        var fantasyQuestBottom = fantasyQuestSection.offsetTop + fantasyQuestSection.offsetHeight;
+
+        // Získame aktuálnu pozíciu skrolovanie
+        var scrollPosition = window.scrollY + window.innerHeight;
+
+        // Kontrola, či sme v časti Fantasy Quest a mesiac nie je ešte viditeľný
+        if (scrollPosition > fantasyQuestSection.offsetTop && scrollPosition < fantasyQuestBottom && !moonVisible) {
+            moonBackground.style.opacity = "1"; // Zobraziť mesiac
+            moonBackground.style.animation = "slideInGrow 2s ease-in-out forwards"; // Spustiť animáciu
+            moonVisible = true; // Oznámiť, že mesiac je viditeľný
+        }
+    }
+
+    // Spustiť funkciu checkFantasyQuest() po načítaní stránky
+    checkFantasyQuest();
+});
 </script>
 
 <style lang="scss" scoped>
@@ -293,6 +317,36 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@keyframes slideInGrow {
+    0% {
+        transform: translateX(100%) scale(0.5);
+        opacity: 0.5;
+    }
+
+    80% {
+        transform: translateX(0) scale(1);
+        opacity: 0.75;
+    }
+
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.moon-background {
+    background-image: url('@/assets/moon.png'); 
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 900px;
+    right: 0;
+    width: 30%; 
+    height: 60%;
+    z-index: 1; 
+    animation: slideInGrow 2s ease-in-out forwards;
 }
 
 
