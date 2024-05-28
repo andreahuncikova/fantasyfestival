@@ -189,7 +189,7 @@ export default {
       targets: 'moon',
       right: 300,
       easing: 'easeInOutQuad',
-      duration: 1500
+      duration: 1000
     });
   }
 }

@@ -86,15 +86,17 @@ export default {
           anime({
             targets: '#clouds',
             bottom: '0px',
-            duration: 1000,
-            easing: 'easeInOutSine'
+            duration: 500,
+            easing: 'easeInOutSine',
+            opacity: 1
           });
         } else {
           anime({
             targets: '#clouds',
             bottom: '-100px',
             duration: 1000,
-            easing: 'easeInOutSine'
+            easing: 'easeInOutSine',
+            opacity: 0.1
           });
         }
       });
