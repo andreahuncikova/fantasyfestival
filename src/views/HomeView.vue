@@ -1,13 +1,13 @@
 <template>
   <main>
-    <div class="hero relative h-screen overflow-hidden cursor-pointer" @click="scrollToContent">
+    <div class="hero relative h-auto sm:h-screen overflow-hidden cursor-pointer" @click="scrollToContent">
       <video class="h-full object-cover px-0 sm:py-0 pt-0" autoplay loop muted playsinline>
         <source src="@/assets/fantasytitle1.mp4" type="video/mp4">
       </video>
     </div>
 <!---------------------fantasy quest esbjerg info------------------------------->
     <div class="container-fantasyquest smalldevicesbackgroundpurple mx-auto w-10/12 flex flex-wrap">
-        <div class="w-full pt-0 sm:pt-40">
+        <div class="w-full pt-16 sm:pt-40">
             <h1>FANTASY QUEST ESBJERG</h1>
         </div>
         <div class="w-full lg:w-9/12 flex flex-col justify-between py-6">
@@ -301,7 +301,7 @@ export default {
   
   .hero video {
     height: 350px;
-    margin-top: 300px;
+    margin-top: 100px;
     object-fit: cover;
   }
 

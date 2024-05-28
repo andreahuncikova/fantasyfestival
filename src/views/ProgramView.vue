@@ -1,15 +1,15 @@
 <template>
     <main>
 
-    <div class="flex items-center justify-center h-screen">
-        <div class="w-10/12 h-full">
+    <div class="flex items-center justify-center h-auto sm:h-screen">
+        <div class="w-full py-6 sm:py-0 sm:w-10/12 h-full">
             <div class="h-full pt-32 p-10">
                 <iframe class="inset-0 w-full h-full images" src="https://www.youtube.com/embed/a1Qf8HLr4LE?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
   <!-------------------- program --------------------->  
-  <div class="py:32 pt-32 mx-auto w-10/12">
+  <div class="pt-10 sm:pt-32 mx-auto w-10/12">
       <h1 class="text-end mb-6">PROGRAM</h1>
     </div>
       <div class="container-program smalldevicesbackgroundpurple w-full">
@@ -20,7 +20,7 @@
             <p class="mt-2">Saturday, September 16th boasts a diverse lineup of engaging lectures, exciting signings, and fun-filled activities suitable for both the young and the young at heart, promising a day of unforgettable moments.</p>
           </div>
           <div class="flex mt-10 justify-center"> 
-             <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" class="buttonblue">CHECK OUT THE SATURDAY PROGRAM</a>
+             <a href="https://fantasyfestival.dk/program-og-aktiviteter/program/program-16-september" class="buttonblue">CHECK OUT THE SATURDAY PROGRAM</a>
          </div>
         </div>
         <div class="w-full md:w-1/2">
@@ -29,7 +29,7 @@
             <p class="mt-2">The Sunday program unfurls with a rich array of captivating lectures, exclusive signings, and a myriad of immersive activities tailored to delight attendees of all ages, promising an unforgettable day of exploration and discovery.</p>
           </div>
           <div class="flex mt-10 justify-center"> 
-             <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" class="buttonblue">CHECK OUT THE SUNDAY PROGRAM</a>
+             <a href="https://fantasyfestival.dk/program-og-aktiviteter/program/program-17-september" class="buttonblue">CHECK OUT THE SUNDAY PROGRAM</a>
          </div>
       </div>
     </div>
