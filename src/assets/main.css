@@ -10,6 +10,7 @@
 
 h1 {
     font-size: 60px;
+    line-height: 1.2;
     font-weight: bold;
     color: var(--vt-c-gold);
     font-family: 'Philosopher', sans-serif;

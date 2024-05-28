@@ -1,7 +1,7 @@
 <template>
   <main>
-    <div class="hero relative h-auto sm:h-screen overflow-hidden cursor-pointer" @click="scrollToContent">
-      <video class="h-full object-cover px-0 sm:py-0 pt-0" autoplay loop muted playsinline>
+    <div class="hero relative h-auto sm:h-screen overflow-hidden cursor-pointer p-3 sm:p-0" @click="scrollToContent">
+      <video class="h-full object-cover sm:py-0 pt-0" autoplay loop muted playsinline preload="auto">
         <source src="@/assets/fantasytitle1.mp4" type="video/mp4">
       </video>
     </div>
@@ -162,6 +162,8 @@
 
   </main>
 </template>
+
+
 
 <script>
 import anime from 'animejs/lib/anime.es.js';
@@ -354,10 +356,25 @@ document.addEventListener("DOMContentLoaded", function() {
 @media (max-width: 768px) {
   
   .hero video {
-    height: 350px;
-    margin-top: 100px;
+    height: 280px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px 4px var(--vt-c-purple); 
+    border: 3px solid var(--vt-c-purple);
     object-fit: cover;
+    border-radius: 10px; 
   }
+
+
+  .hero::before,
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0%; 
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
 
 }
 

@@ -3,7 +3,7 @@
     <div class="container pt-24 flex content-center">
         <div class="row flex flex-row">
             <div class="col w-1/12"></div>
-            <div class="col w-10/12 sm:w-9/12 mt-28">
+            <div class="col w-10/12 sm:w-8/12 mt-10 sm:mt-28">
                 <h1>TRANSPORT</h1>
             <p class="mt-6">Fantasy Festival is conveniently situated with excellent access to public transportation and parking facilities.</p>
             <h3 class="mt-6">Public Transportation:</h3>
