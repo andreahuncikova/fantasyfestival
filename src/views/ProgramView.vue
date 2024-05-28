@@ -26,7 +26,7 @@
         <div class="w-full md:w-1/2">
           <div class="border p-6 rounded-lg imagesblue">
             <h2 class="h2blue">15 SEPTEMBER 2024</h2>
-            <p class="mt-2">The Sunday program unfurls with a rich array of captivating lectures, exclusive signings, and a myriad of immersive activities tailored to delight attendees of all ages, promising an unforgettable day of exploration and discovery.</p>
+            <p class="mt-2">The Sunday program unfurls with a rich array of captivating lectures, exclusive signings, and a myriad of immersive activities tailored to delight attendees of all ages.</p>
           </div>
           <div class="flex mt-10 justify-center"> 
              <a href="https://fantasyfestival.dk/program-og-aktiviteter/program/program-17-september" class="buttonblue">CHECK OUT THE SUNDAY PROGRAM</a>
