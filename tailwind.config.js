@@ -16,6 +16,7 @@ export default {
       },
       height: {
         '700': '700px',
+        '500': '500px',
       },
     },
   },

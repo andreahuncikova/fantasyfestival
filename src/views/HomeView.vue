@@ -56,8 +56,6 @@
         </p>
           </div>
     </div>
-
-
 <!---------------------characters------------------------------->
         <h1 class="mx-auto w-10/12 flex justify-end mt-20 sm:mt-52">MEET OUR CHARACTERS</h1>
   <div class="grid-wrapper mx-auto w-10/12 mt-10 sm:mt-20">
@@ -188,10 +186,10 @@ export default {
   },
   mounted() {
     anime({
-      targets: 'moon-background',
+      targets: 'moon',
       right: 300,
       easing: 'easeInOutQuad',
-      duration: 1500
+      duration: 1000
     });
   }
 }
@@ -227,7 +225,7 @@ export default {
 
 
   .familyquest {
-    min-height: 900px;
+    min-height: 800px;
     width: 100%;
     background-image: url('@/assets/backgroundsmaller.svg');
     background-size: cover;

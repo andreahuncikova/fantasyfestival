@@ -3,7 +3,7 @@
 
     <div class="flex items-center justify-center h-auto sm:h-screen">
         <div class="w-full py-6 sm:py-0 sm:w-10/12 h-full">
-            <div class="h-full pt-32 p-10">
+            <div class="sm:h-full pt-32 p-10 h-500">
                 <iframe class="inset-0 w-full h-full images" src="https://www.youtube.com/embed/a1Qf8HLr4LE?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
