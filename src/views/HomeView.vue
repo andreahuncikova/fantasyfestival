@@ -6,7 +6,6 @@
       </video>
     </div>
 <!---------------------fantasy quest esbjerg info------------------------------->
-<div id="app">
     <div class="container-fantasyquest smalldevicesbackgroundpurple mx-auto w-10/12 flex flex-wrap">
         <div class="w-full pt-0 sm:pt-40">
             <h1>FANTASY QUEST ESBJERG</h1>
@@ -57,7 +56,7 @@
         </p>
           </div>
     </div>
-</div>
+
 
 <!---------------------characters------------------------------->
         <h1 class="mx-auto w-10/12 flex justify-end mt-20 sm:mt-52">MEET OUR CHARACTERS</h1>
@@ -238,7 +237,7 @@ export default {
 
 .grid-wrapper {
       display: grid;
-      grid-gap: 15px;
+      grid-gap: 30px;
       grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
     }
 
