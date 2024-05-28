@@ -86,12 +86,20 @@ export default {
           anime({
             targets: '#clouds',
             bottom: '0px',
-            duration: 5000,
+            duration: 1000,
             easing: 'easeInOutSine'
           });
-          observer.unobserve(entry.target);
+        } else {
+          anime({
+            targets: '#clouds',
+            bottom: '-100px',
+            duration: 1000,
+            easing: 'easeInOutSine'
+          });
         }
       });
+    }, {
+      threshold: [0, 1]
     });
 
     observer.observe(this.$refs.footer);
@@ -101,7 +109,28 @@ export default {
 
 
 <style lang="scss" scoped>
+  .footer {
+  position: relative;
+  overflow: hidden;
+}
+  .clouds-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.clouds {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: -100px; 
+}
   .container-info {
+    position: relative;
+    z-index: 1;
     background-image: linear-gradient(to bottom, #9b5fc6, #401156);
   }
 
