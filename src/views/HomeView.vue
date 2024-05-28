@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="hero relative h-auto sm:h-screen overflow-hidden cursor-pointer" @click="scrollToContent">
-      <video class="h-full object-cover px-0 sm:py-0 pt-0" autoplay loop muted playsinline>
+      <video class="h-full object-cover px-0 sm:py-0 pt-0" autoplay loop muted playsinline preload="auto">
         <source src="@/assets/fantasytitle1.mp4" type="video/mp4">
       </video>
     </div>

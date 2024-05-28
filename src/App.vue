@@ -5,10 +5,10 @@ import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
-  <div>
+  <div id="app">
     <Navbar />
     <transition name="fade" mode="out-in">
-      <RouterView />
+      <router-view></router-view>
     </transition>
     <Footer />
   </div>
