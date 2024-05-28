@@ -87,7 +87,7 @@ export default {
 
     images.forEach(image => {
       image.addEventListener("click", function () {
-        modal.style.display = "flex"; // Changed to flex
+        modal.style.display = "flex";
         modalImg.src = this.src;
       });
     });
@@ -113,7 +113,7 @@ export default {
 }
 
 .gallery-image {
-  cursor: pointer; /* Add pointer cursor for images */
+  cursor: pointer; 
 }
 
 .modal {
@@ -135,7 +135,7 @@ export default {
   margin: auto;
   display: block;
   max-width: 80%;
-  max-height: 80%; /* Ensure it fits within the modal */
+  max-height: 80%;
 }
 
 .close {
@@ -153,5 +153,13 @@ export default {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  
+  .container-gallery {
+  min-height: 1500px;
+}
+
 }
 </style>

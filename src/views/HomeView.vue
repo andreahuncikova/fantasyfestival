@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="hero relative h-screen overflow-hidden cursor-pointer" @click="scrollToContent">
-      <video class="w-full h-full object-cover px-0 sm:px-24 py-40 sm:py-0" autoplay loop muted playsinline>
+      <video class="h-full object-cover px-0 sm:py-0 pt-0" autoplay loop muted playsinline>
         <source src="@/assets/fantasytitle1.mp4" type="video/mp4">
       </video>
     </div>
@@ -162,6 +162,7 @@ export default {
     return {
       showMoreText: false
     }
+    
   },
   mounted() {
     this.animateMoonBackground();
@@ -175,21 +176,18 @@ export default {
       if (nextContainer) {
         nextContainer.scrollIntoView({ behavior: 'smooth' });
       }
-    },
-    animateMoonBackground() {
-      anime({
-        targets: this.$refs.moonBackground,
-        keyframes: [
-          { translateY: -10 },
-          { translateY: 0 }
-        ],
-        duration: 2000,
-        easing: 'easeInOutSine',
-        loop: true
-      });
     }
+  },
+  mounted() {
+    anime({
+      targets: 'moon-background',
+      right: 300,
+      easing: 'easeInOutQuad',
+      duration: 1500
+    });
   }
 }
+
 </script>
 
 <style lang="scss" scoped>
@@ -288,18 +286,14 @@ export default {
   object-fit: cover;
 }
 
-.video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Transparent overlay */
-}
+
 
 @media (max-width: 768px) {
   .hero video {
-    object-fit: cover; /* Maintain object-fit cover for video */
+    height: 350px;
+    margin-top: 300px;
+    object-fit: cover;
   }
+
 }
 </style>

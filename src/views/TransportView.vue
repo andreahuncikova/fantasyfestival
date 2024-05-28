@@ -23,7 +23,7 @@
                     <img src="@/assets/horse.jpg" alt="" class="imagesblue festivalpicture">
                 </div>
                 <div class="col w-1/12 hidden sm:block"></div>
-                <div class="col w-full sm:w-5/12">
+                <div class="col w-full mt-12 sm:w-5/12">
                     <h3 class="h3blue pt-4">Overview of free parking in Esbjerg:</h3>
                     <p class="pt-2">It is possible to park for free at Museumspladsen, right next to the main library. The parking lot fills up quickly, so alternatively, you may have to park elsewhere.</p>
                     <p class="pt-2">It's free to park for the first two hours in downtown Esbjerg. Some places have time-limited parking.</p>
@@ -62,5 +62,8 @@
     align-content: center;
 }
 
+.festivalpicture {
+    height: 700px;
+}
 
 </style>
