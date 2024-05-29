@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="hero relative h-auto sm:h-screen overflow-hidden cursor-pointer p-3 sm:p-0" @click="scrollToContent">
-      <video class="h-full object-cover sm:py-0 pt-0" autoplay loop muted playsinline>
+      <video class="video h-full object-cover sm:py-0 pt-0" autoplay loop muted playsinline preload="auto">
         <source src="@/assets/fantasytitle1.mp4" type="video/mp4">
       </video>
     </div>
@@ -295,6 +295,41 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+}
+
+.video {
+  animation: fade-out 5s linear;
+  animation-timeline: view();
+    animation-range: exit;
+}
+
+
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+.moon-background {
+    background-image: url('@/assets/moon.png'); 
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 900px;
+    right: 0;
+    width: 30%; 
+    height: 60%;
+    z-index: 1; 
+    animation: slideInGrow 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range-start: 0;
+    animation-range-end: 700px;
 }
 
 @keyframes slideInGrow {
@@ -314,21 +349,6 @@ export default {
     }
 }
 
-.moon-background {
-    background-image: url('@/assets/moon.png'); 
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 900px;
-    right: 0;
-    width: 30%; 
-    height: 60%;
-    z-index: 1; 
-    animation: slideInGrow 2s ease-in-out forwards;
-    animation-timeline: view();
-    animation-range-start: 0;
-    animation-range-end: 700px;
-}
 
 
 
