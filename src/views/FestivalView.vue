@@ -7,13 +7,22 @@
         <h1>FANTASY FESTIVAL</h1>
       </div>
           <h2 class="mt-10">Explore more about the festival</h2>
-          <p class="mt-2">Fantasy Festival Esbjerg is an enchanting event that celebrates the wonders of fantasy literature and the power of imagination. Since its inception in 2015, the festival has grown exponentially, attracting approximately 8,000 attendees in 2022. From immersive storytelling sessions to interactive workshops, attendees can explore the rich tapestry of the fantasy genre. With cosplay competitions and a vibrant marketplace, there’s something for everyone. Special guest appearances and exclusive book signings add to the excitement. Join us for a weekend filled with magic, adventure, and endless possibilities at Fantasy Festival Esbjerg!</p>
-          <h3 class="pb-2">Join us at Fantasy Festival Esbjerg!</h3>
+          <p class="mt-2">Fantasy Festival Esbjerg is an enchanting event that celebrates the wonders of fantasy literature and the power of imagination. Since its inception in 2015, the festival has grown exponentially, attracting approximately 8,000 attendees in 2022. From immersive storytelling sessions to interactive workshops, attendees can explore the rich tapestry of the fantasy genre. Embracing both classic tales and contemporary narratives, the festival offers a diverse range of activities catering to enthusiasts of all ages and interests.
+
+
+
+
+
+
+</p>
         </div>
+        <div class="col">
+        <h3 class="pb-4">Join us at Fantasy Festival Esbjerg!</h3>
         <div class="flex">
           <a href="https://www.ticketmaster.dk/artist/fantasyfestival-billetter/1233494" class="button">BUY TICKETS</a>
           <a href="/program" class="button ml-6">SEE PROGRAM</a>
         </div>
+      </div>
       </div>
       <div class="w-1/12"></div>
       <div class="w-full lg:w-4/12 justify-end mt-10">
