@@ -12,7 +12,7 @@
   <div class="pt-10 sm:pt-32 mx-auto w-10/12">
       <h1 class="text-end mb-6">PROGRAM</h1>
     </div>
-      <div class="container-program smalldevicesbackgroundpurple w-full headline">
+      <div class="container-program smalldevicesbackgroundpurple w-full">
       <div class="container py-8 mx-auto flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-20 w-10/12">
         <div class="row w-full md:w-1/2 flex flex-col imagesblue items-stretch">
         <div class="p-6 rounded-lg flex-grow">
@@ -39,7 +39,7 @@
 </template>
 
 <script setup>
-ScrollReveal().reveal('.headline');
+
 </script>
 
 <style lang="scss" scoped>
