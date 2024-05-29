@@ -196,30 +196,6 @@ export default {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    var moonBackground = document.querySelector(".moon-background");
-    var moonVisible = false;
-    var fantasyQuestSection = document.querySelector(".container-fantasyquest");
-
-    // Funkcia na kontrolu, či sme v časti Fantasy Quest
-    function checkFantasyQuest() {
-        // Získame hranicu spodnej hrany Fantasy Quest sekcie
-        var fantasyQuestBottom = fantasyQuestSection.offsetTop + fantasyQuestSection.offsetHeight;
-
-        // Získame aktuálnu pozíciu skrolovanie
-        var scrollPosition = window.scrollY + window.innerHeight;
-
-        // Kontrola, či sme v časti Fantasy Quest a mesiac nie je ešte viditeľný
-        if (scrollPosition > fantasyQuestSection.offsetTop && scrollPosition < fantasyQuestBottom && !moonVisible) {
-            moonBackground.style.opacity = "1"; // Zobraziť mesiac
-            moonBackground.style.animation = "slideInGrow 2s ease-in-out forwards"; // Spustiť animáciu
-            moonVisible = true; // Oznámiť, že mesiac je viditeľný
-        }
-    }
-
-    // Spustiť funkciu checkFantasyQuest() po načítaní stránky
-    checkFantasyQuest();
-});
 </script>
 
 <style lang="scss" scoped>
@@ -349,6 +325,9 @@ document.addEventListener("DOMContentLoaded", function() {
     height: 60%;
     z-index: 1; 
     animation: slideInGrow 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range-start: 0;
+    animation-range-end: 700px;
 }
 
 
