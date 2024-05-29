@@ -7,10 +7,10 @@
         <h1>FANTASY FESTIVAL</h1>
       </div>
           <h2 class="mt-10">Explore more about the festival</h2>
-          <p class="mt-2">Fantasy Festival Esbjerg is an enchanting event that celebrates the wonders of fantasy literature and the power of imagination. Since its inception in 2015, the festival has grown exponentially, attracting approximately 8,000 attendees in 2022. From immersive storytelling sessions to interactive workshops, attendees can explore the rich tapestry of the fantasy genre. Join us for a weekend filled with magic, adventure, and endless possibilities at Fantasy Festival Esbjerg!</p>
-          <h3 class="mt-6">Join us at Fantasy Festival Esbjerg!</h3>
+          <p class="mt-2">Fantasy Festival Esbjerg is an enchanting event that celebrates the wonders of fantasy literature and the power of imagination. Since its inception in 2015, the festival has grown exponentially, attracting approximately 8,000 attendees in 2022. From immersive storytelling sessions to interactive workshops, attendees can explore the rich tapestry of the fantasy genre. With cosplay competitions and a vibrant marketplace, there’s something for everyone. Special guest appearances and exclusive book signings add to the excitement. Join us for a weekend filled with magic, adventure, and endless possibilities at Fantasy Festival Esbjerg!</p>
+          <h3 class="pb-2">Join us at Fantasy Festival Esbjerg!</h3>
         </div>
-        <div class="flex pt-3">
+        <div class="flex">
           <a href="https://www.ticketmaster.dk/artist/fantasyfestival-billetter/1233494" class="button">BUY TICKETS</a>
           <a href="/program" class="button ml-6">SEE PROGRAM</a>
         </div>
@@ -23,7 +23,7 @@
 
     <h1 class="flex justify-end mt-20 md:mt-40 w-10/12 mx-auto mb-6">GALLERY</h1>
 
-    <div class="container-gallery flex items-center justify-center min-h-screen">
+    <div class="container-gallery flex items-center justify-center min-h-screen" preload="auto">
       <div class="grid grid-cols-12 grid-rows-4 gap-2 sm:gap-6 w-full mx-auto md:max-h-750 py-10 sm:py-0 px-6 md:px-10">
         <div class="col-span-6 md:col-span-2 row-span-1 rounded-lg overflow-hidden">
           <img src="@/assets/festival1.jpg" alt="Moon Image 1" class="w-full h-full object-cover gallery-image">
