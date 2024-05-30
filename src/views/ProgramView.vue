@@ -11,7 +11,7 @@
       <div class="pt-10 sm:pt-32 mx-auto w-10/12">
         <h1 class="text-end mb-6">PROGRAM</h1>
       </div>
-      <div class="container-program smalldevicesbackgroundpurple w-full">
+      <div class="container-program smalldevicesbackgroundpurple w-full reveal">
         <div class="row py-8 mx-auto flex flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-20 w-10/12">
           <div class="flex flex-col md:flex-row justify-between w-full space-y-8 md:space-y-0 md:space-x-8">
             <div class="col w-full flex flex-col items-stretch imagesblue">
@@ -41,7 +41,26 @@
   </template>
 
 <script setup>
+window.addEventListener('scroll', reveal);
 
+function reveal(){
+  var reveals = document.querySelectorAll('.reveal');
+
+  for(var i = 0; i < reveals.length; i++){
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+
+    if(revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add('active');
+    }
+
+    else{
+      reveals[i].classList.remove('active');
+    }
+  }
+}
+reveal();
 </script>
 
 <style lang="scss" scoped>
@@ -74,6 +93,20 @@
     border-color: var(--vt-c-dark);
     transition: 0.3s;
 }
+
+
+.reveal{
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 
 @media (max-width: 768px) {
     .button {

@@ -32,7 +32,7 @@
 
     <h1 class="flex justify-end mt-20 md:mt-40 w-10/12 mx-auto mb-6">GALLERY</h1>
 
-    <div class="container-gallery flex items-center justify-center min-h-screen" preload="auto">
+    <div class="container-gallery flex items-center justify-center min-h-screen reveal" preload="auto">
       <div class="grid grid-cols-12 grid-rows-4 gap-2 sm:gap-6 w-full mx-auto md:max-h-750 py-10 sm:py-0 px-6 md:px-10">
         <div class="col-span-6 md:col-span-2 row-span-1 rounded-lg overflow-hidden">
           <img src="@/assets/festival1.jpg" alt="Moon Image 1" class="w-full h-full object-cover gallery-image">
@@ -112,6 +112,28 @@ export default {
     });
   }
 }
+
+
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+  var reveals = document.querySelectorAll('.reveal');
+
+  for(var i = 0; i < reveals.length; i++){
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+
+    if(revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add('active');
+    }
+
+    else{
+      reveals[i].classList.remove('active');
+    }
+  }
+}
+reveal();
 </script>
 
 <style scoped>
@@ -163,6 +185,20 @@ export default {
   text-decoration: none;
   cursor: pointer;
 }
+
+
+.reveal{
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 
 @media (max-width: 768px) {
   

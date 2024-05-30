@@ -17,7 +17,7 @@
     <div class="mt-24 sm:mt-60 flex justify-end mx-auto w-10/12">
             <h1 class="mb-6 sm:mb-0">PARKING</h1>
         </div>
-        <div class="container-parking mx-auto w-full lg:flex sm:px-4 lg:px-0 items-center">
+        <div class="container-parking mx-auto w-full lg:flex sm:px-4 lg:px-0 items-center reveal">
             <div class="container-parking-text mx-auto w-10/12 flex flex-col sm:flex-row pb-20">
                 <div class="w-full lg:w-5/12 mt-3 sm:mt-0">
                 <img src="@/assets/horse.jpg" alt="Festival Picture" class="imagesblue w-full rounded-lg">
@@ -37,7 +37,7 @@
 
     <h1 class="flex mx-auto w-10/12 py-6 sm:py-16 mt-10">FIND US HERE</h1>
 
-    <div class="container-map mx-auto w-full h-full flex items-center justify-center flex-col">
+    <div class="container-map mx-auto w-full h-full flex items-center justify-center flex-col reveal">
         <div class="map images w-10/12 h-full rounded-xl">
             <iframe class="w-full h-96 md:h-120 lg:h-700" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.6098191349392!2d8.451657876388301!3d55.46946841377929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b212b9a5bffcf%3A0xb4a5a9033bed3394!2sN%C3%B8rregade%2019%2C%206700%20Esbjerg!5e0!3m2!1ssk!2sdk!4v1715840838739!5m2!1ssk!2sdk&theme=dark" width="80%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -64,6 +64,21 @@
     background-position: center;
 }
 
+
+.moon-background {
+    background-image: url('@/assets/moon.png'); 
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 30%; 
+    height: 60%;
+    z-index: 1; 
+    animation: slideInGrow 2s ease-in-out forwards; /* Animácia príchod, postupné zväčšenie */
+}
+
+
 @keyframes slideInGrow {
     0% {
         transform: translateX(100%) scale(0.5);
@@ -81,16 +96,16 @@
     }
 }
 
-.moon-background {
-    background-image: url('@/assets/moon.png'); 
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 100px;
-    right: 0;
-    width: 30%; 
-    height: 60%;
-    z-index: 1; 
-    animation: slideInGrow 2s ease-in-out forwards; /* Animácia príchod, postupné zväčšenie */
+
+.reveal{
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 </style>

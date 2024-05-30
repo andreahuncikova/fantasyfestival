@@ -10,7 +10,7 @@
         <div class="w-full pt-16 sm:pt-40">
             <h1>FANTASY QUEST ESBJERG</h1>
         </div>
-        <div class="w-full lg:w-9/12 flex flex-col justify-between py-6">
+        <div class="w-full lg:w-9/12 flex flex-col justify-between py-6 reveal">
             <div class="mb-auto">
                 <h3>14 September 2024</h3>
                 <p class="mt-4">
@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <div v-if="showMoreText" class="familyquest flex items-center justify-center min-h-screen flex-col mt-8">
+    <div v-if="showMoreText" class="familyquest flex items-center justify-center min-h-screen flex-col mt-8 reveal">
         <div class="w-10/12 mb-10 sm:mb-20 mt-10 sm:mt-0">
             <p> In the old days they said...
             <br>
@@ -58,7 +58,7 @@
     </div>
 <!---------------------characters------------------------------->
         <h1 class="mx-auto w-10/12 flex justify-end mt-20 sm:mt-52">MEET OUR CHARACTERS</h1>
-  <div class="grid-wrapper mx-auto w-10/12 mt-10 sm:mt-20">
+  <div class="grid-wrapper mx-auto w-10/12 mt-10 sm:mt-20 reveal">
     <div class="card">
       <div class="card-inner">
         <div class="card-front">
@@ -111,7 +111,7 @@
     </div>
   </div>    
 <!---------------------family quest info------------------------------->
-<div class="familyquest flex justify-center flex-col items-center mt-32 sm:mt-64">  
+<div class="familyquest flex justify-center flex-col items-center mt-32 sm:mt-64 reveal">  
 
 <div class="container mx-auto w-10/12">
         <div class="w-full lg:flex">
@@ -135,7 +135,7 @@
     </div>
   </div>
     <!---------------------evening quest info------------------------------->
-<div class="container mx-auto w-10/12 flex flex-wrap mt-10 sm:mt-20">
+<div class="container mx-auto w-10/12 flex flex-wrap mt-10 sm:mt-20 reveal">
   
   <div class="order-3 sm:order-1 w-full lg:w-4/12 py-6 justify-end">
     <img src="@/assets/eveningquest.jpg" class="images">
@@ -196,6 +196,26 @@ export default {
   }
 }
 
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+  var reveals = document.querySelectorAll('.reveal');
+
+  for(var i = 0; i < reveals.length; i++){
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+
+    if(revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add('active');
+    }
+
+    else{
+      reveals[i].classList.remove('active');
+    }
+  }
+}
+reveal();
 </script>
 
 <style lang="scss" scoped>
@@ -239,25 +259,25 @@ export default {
       display: grid;
       grid-gap: 30px;
       grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
-    }
+}
 
-    .card {
+.card {
       perspective: 1000px;
-    }
+}
 
-    .card-inner {
+.card-inner {
       width: 100%;
       height: 400px;
       transform-style: preserve-3d;
       transition: transform 1.1s;
       position: relative;
-    }
+}
 
-    .card:hover .card-inner {
+.card:hover .card-inner {
       transform: rotateY(180deg);
-    }
+}
 
-    .card-front, .card-back {
+.card-front, .card-back {
       width: 100%;
       height: 100%;
       backface-visibility: hidden;
@@ -268,16 +288,16 @@ export default {
       position: absolute;
       top: 0;
       left: 0;
-    }
+}
 
-    .card-front img {
+.card-front img {
       border-radius: 10px;
       width: 100%;
       height: 100%;
       object-fit: cover;
-    }
+}
 
-    .card-back {
+.card-back {
       background-color: var(--vt-c-gold);
       color: white;
       transform: rotateY(180deg);
@@ -289,30 +309,13 @@ export default {
       padding: 10px;
       box-sizing: border-box;
       text-align: center;
-    }
+}
 
 .hero video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
 
-}
-
-.video {
-  animation: fade-out 5s linear;
-  animation-timeline: view();
-    animation-range: exit;
-}
-
-
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }
 
 
@@ -349,6 +352,18 @@ export default {
     }
 }
 
+.reveal{
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 
 
 
@@ -364,7 +379,7 @@ export default {
   }
 
 
-  .hero::before,
+.hero::before,
 .hero::after {
   content: '';
   position: absolute;
