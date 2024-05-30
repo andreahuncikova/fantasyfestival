@@ -2,7 +2,7 @@
   <header>
     <nav :class="['navbar w-full', { 'scrolled': isScrolled }]">
       <div class="flex items-center justify-between mx-auto w-10/12 py-2">
-        <RouterLink to="/">
+        <RouterLink @click="closeMenu" to="/">
           <img src="@/assets/logo.svg" class="h-16 logo" alt="Fantasy festival Logo" />
         </RouterLink>
         <button @click="toggleMenu" class="md:hidden">
@@ -12,16 +12,16 @@
         </button>
         <ul :class="menuOpen ? 'block' : 'hidden'" class="md:flex flex-col md:flex-row md:space-x-4">
           <li>
-            <RouterLink to="/" class="nav-link font-bold font-philosopher text-lg" :class="{ 'active-link': $route.path === '/' }">QUEST</RouterLink>
+            <RouterLink @click="closeMenu" to="/" class="nav-link font-bold font-philosopher text-lg" :class="{ 'active-link': $route.path === '/' }">QUEST</RouterLink>
           </li>
           <li>
-            <RouterLink to="/festival" class="nav-link font-bold font-philosopher text-lg" :class="{ 'active-link': $route.path === '/festival' }">FESTIVAL</RouterLink>
+            <RouterLink @click="closeMenu" to="/festival" class="nav-link font-bold font-philosopher text-lg" :class="{ 'active-link': $route.path === '/festival' }">FESTIVAL</RouterLink>
           </li>
           <li>
-            <RouterLink to="/program" class="nav-link font-bold font-philosopher text-lg" :class="{ 'active-link': $route.path === '/program' }">PROGRAM</RouterLink>
+            <RouterLink @click="closeMenu" to="/program" class="nav-link font-bold font-philosopher text-lg" :class="{ 'active-link': $route.path === '/program' }">PROGRAM</RouterLink>
           </li>
           <li>
-            <RouterLink to="/transport" class="nav-link font-bold font-philosopher text-lg" :class="{ 'active-link': $route.path === '/transport' }">TRANSPORT</RouterLink>
+            <RouterLink @click="closeMenu" to="/transport" class="nav-link font-bold font-philosopher text-lg" :class="{ 'active-link': $route.path === '/transport' }">TRANSPORT</RouterLink>
           </li>
         </ul>
       </div>
@@ -29,8 +29,6 @@
   </header>
 </template>
 
-
-  
 <script setup>
 import { RouterLink } from 'vue-router';
 import { ref, onMounted, onUnmounted } from 'vue';
@@ -40,6 +38,10 @@ const isScrolled = ref(false);
 
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value;
+};
+
+const closeMenu = () => {
+  menuOpen.value = false;
 };
 
 const handleScroll = () => {
@@ -55,8 +57,6 @@ onUnmounted(() => {
 });
 </script>
 
-
-  
 <style lang="scss" scoped>
 .navbar {
   position: fixed;
@@ -69,7 +69,7 @@ onUnmounted(() => {
 }
 
 .navbar.scrolled {
-  background-color: rgba(15, 2, 47, 0.9); // Adjust this color as needed
+  background-color: rgba(15, 2, 47, 0.9); 
 }
 
 .nav-link {

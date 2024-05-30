@@ -1,6 +1,6 @@
 <template>
   <main>
-       <div class="hero relative h-auto sm:h-screen overflow-hidden cursor-pointer p-3 sm:p-0" @click="scrollToContent">
+       <div class="hero relative h-auto sm:h-screen overflow-hidden cursor-pointer p-3 pt-20 sm:pt-0 sm:p-0" @click="scrollToContent">
       <video class="h-full object-cover sm:py-0 pt-0" autoplay loop muted playsinline preload="auto">
         <source src="@/assets/fantasytitle1.mp4" type="video/mp4">
       </video>
