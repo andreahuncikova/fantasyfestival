@@ -28,11 +28,6 @@
                     </span>
                 </p>
             </div>
-            <div class="flex pt-3 mt-4">
-                <button @click="toggleMoreText" class="button">
-                    {{ showMoreText ? 'READ LESS' : 'READ MORE' }}
-                </button>
-            </div>
         </div>
         <div class="col w-3/12 flex justify-end items-end moon-background mt-16 hidden sm:flex">
         </div>
@@ -56,6 +51,13 @@
         </p>
           </div>
     </div>
+    <div class="w-10/12 flex mx-auto flex-col justify-between py-10 sm:py-6">
+          <div class="flex pt-3 mt-4">
+                <button @click="toggleMoreText" class="button">
+                    {{ showMoreText ? 'READ LESS' : 'READ MORE' }}
+                </button>
+            </div>
+        </div>
 <!---------------------characters------------------------------->
         <h1 class="mx-auto w-10/12 flex justify-end mt-20 sm:mt-52">MEET OUR CHARACTERS</h1>
   <div class="grid-wrapper mx-auto w-10/12 mt-10 sm:mt-20 reveal">
@@ -195,6 +197,8 @@ export default {
     });
   }
 }
+
+
 
 window.addEventListener('scroll', reveal);
 
