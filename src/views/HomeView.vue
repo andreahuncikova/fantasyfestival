@@ -359,7 +359,7 @@ reveal();
   position: relative;
   transform: translateY(50px);
   opacity: 0;
-  transition: all 2s ease;
+  transition: all 1.5s ease;
 }
 
 .reveal.active {
