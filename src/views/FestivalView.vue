@@ -195,7 +195,7 @@ reveal();
 }
 
 .reveal.active {
-  transform: translateY(0);
+  transform: translateY(50px);
   opacity: 1;
 }
 
