@@ -41,7 +41,7 @@
             <img src="@/assets/facebook.svg" alt="Facebook" class="socialmedia">
           </a>
 
-          <a href="https://www.example.com">
+          <a href="https://www.instagram.com/fantasyfestivalen/">
             <img src="@/assets/instagram.svg" alt="Instagram" class="socialmedia">
           </a>
         </div>
