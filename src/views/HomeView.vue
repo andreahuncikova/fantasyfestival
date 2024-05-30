@@ -363,7 +363,7 @@ reveal();
 }
 
 .reveal.active {
-  transform: translateY(50px);
+  transform: translateY(0);
   opacity: 1;
 }
 
